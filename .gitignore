@@ -1,0 +1,8 @@
+
+## These lines ignore the rendered files, 
+## leaving only the source files.
+
+/.quarto/
+/_site/
+*.DS_Store
+*Thumbs.db

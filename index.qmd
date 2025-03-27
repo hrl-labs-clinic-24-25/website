@@ -1,6 +1,8 @@
 ---
-title: "MDAC"
+title: "QUACK"
 ---
+
+![](images/placeholder_Landing_Page.jpg)
 
 This is a Quarto website.
 

@@ -2,4 +2,4 @@
 title: "About"
 ---
 
-About this site
+This website tells you all that you need to know about QuACK.

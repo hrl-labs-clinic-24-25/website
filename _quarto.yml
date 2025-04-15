@@ -5,9 +5,35 @@ website:
   title: "QUACK"
   navbar:
     left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
+      - href: Page_QuickStart/quickstart.qmd
+        text: Quick Start
+      - text: Ordering
+        menu:
+        - text: Overview
+          href: Page_Ordering/ordering_overview.qmd
+        - text: Electronics
+          href: Page_Ordering/electronics/electronics.qmd
+        - text: Custom Panels
+          href: Page_Ordering/custom_panels/custom_panels.qmd
+        - text: Standard Hardware
+          href: Page_Ordering/standard_hardware/standard_hardware.qmd
+      - text: Assembly
+        href: Page_Assembly/assembly_overview.qmd
+      - text: Software
+        menu:
+        - text: Overview
+          href: Page_Software/software_overview.qmd
+        - text: Example SW?
+          href: Page_Software/example_sw/example_sw.qmd
+      - text: Documentation
+        menu:
+        - text: Hardware
+          href: Page_Documentation/hardware_doc/hardware_doc.qmd
+        - text: Software
+          href: Page_Documentation/software_doc/software_doc.qmd
+      - text: Other Resources
+        href: Page_Resources/resources.qmd
+
 
 format:
   html:

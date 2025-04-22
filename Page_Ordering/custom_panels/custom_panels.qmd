@@ -1,3 +1,43 @@
 ---
 title: Custom Panels
 ---
+
+## Overview
+
+In this project, we designed two custom panels:
+
+- A **front panel** to replace the original Rack Box front panel, with cutouts for the SMA connectors from the output board.
+- A **support panel** to provide mechanical stability.
+
+Both panels were ordered through [Front Panel Express](https://www.frontpanelexpress.com/).
+
+## Panel Ordering Instructions
+
+1. Go to [Front Panel Design](https://www.frontpanelexpress.com/front-panel-designer/download) website to download the latest software (we used version 6.4.1)
+
+2. Open the FrontDesign software and go to File → New to create a new panel file. Then, follow the instructions in the image below to customize your panel design.
+![Panel Design Instructions 1](images/front_design_instruction_1.png)
+
+*Notes: Material of your choice [To Do: explain different material choice]
+
+3. On the top toolbar, you can choose to drill a hole, add a cutout, or insert a text label. The images below demonstrate how to add a hole and a label.
+
+![Panel Design Instructions 2](images/front_design_instruction_2.png)
+![Panel Design Instructions 3](images/front_design_instruction_3.png)
+![Panel Design Instructions 4](images/front_design_instruction_4.png)
+
+4. Use the measure tool to check the dimensions/position of the holes and cutouts. The images below show how to use the measure tool
+
+![Panel Design Instructions 5](images/front_design_instruction_5.png)
+
+*Note: I recommend measuring at specific points such as Edges (E), Center of Hole (R), or Midpoint (M) — these indicators will appear when you hover over them. If no indicator pops up, the measurement may not be exactly at the desired point.*
+
+5. Once you are satisfied with the design, go to Order → Order Panel. This will direct you to the Front Panel Express ordering site to place your order. You can choose to order the panel as is or download the design file for future use.
+![Panel Design Instructions 6](images/front_design_instruction_6.png)
+
+## Our Custom Panels for the Project {#sec-custom-panels}
+- **Front Panel**: The front panel was designed to fit the original Rack Box front panel, with cutouts for the SMA connectors and mounting holes for the output board and the panel itself. The material we used for this panel is anodize aluminum because ..... However .... [TODO]
+
+// TODO: Add image of the front panel design, and the file link to the design file
+
+- **Support Panel**: The support panel was designed to provide mechanical stability to the coupling board. It has 4 M3 mounting holes for the coupling board. 

@@ -8,16 +8,15 @@ The hardware consists of four main components. Each plays a role in interfacing 
 
 ### 1. System Enclosure
 - **Rack Box**: Link to the rack box we order
-- **Custom Front Panel**: Link the detail instruction of front panel design/how to order them 
+- **Custom Front Panel**: [Front Panel](#sec-custom-panels)
 - **Assemble Picture**: 
 
 ![](images/enclosure.jpg){fig-align="center" fig-cap="Rack Box with Front Panel Assemble" width=500}
 
-
 ### 2. Input Board Stack
 - **Function**: 
 - **Key Components**: 
-- **PCB Info**: Link to the PCB design that we documented in the webiste
+- **PCB Info**: Link to the PCB design that we documented in the website
   - Designed in Kicad
   - Power: 
   - any notes that user might need when they try to figure out stuff(frequency/current) , datasheet-like style
@@ -47,8 +46,8 @@ The hardware consists of four main components. Each plays a role in interfacing 
 
     ![](images/coupling_board_design.png){fig-align="center" fig-cap="Coupling Board Overview" width=500}
 
-    - Support panel link: 
-    - Instruction for Hole saw original back panel
+    - Support panel link: [Support Panel](#sec-custom-panels)
+    - Instruction for Hole saw original back panel: Link
 - **Assmbled Picture**:
 
 

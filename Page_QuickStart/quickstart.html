@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.56">
+<meta name="generator" content="quarto-1.6.42">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -35,10 +35,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-6bd9cfa162949bde0a231f530c97869d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -164,8 +164,21 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#hardware" id="toc-hardware" class="nav-link active" data-scroll-target="#hardware">Hardware</a>
+  <ul class="collapse">
+  <li><a href="#system-enclosure" id="toc-system-enclosure" class="nav-link" data-scroll-target="#system-enclosure">1. System Enclosure</a></li>
+  <li><a href="#input-board-stack" id="toc-input-board-stack" class="nav-link" data-scroll-target="#input-board-stack">2. Input Board Stack</a></li>
+  <li><a href="#output-board" id="toc-output-board" class="nav-link" data-scroll-target="#output-board">3. Output Board</a></li>
+  <li><a href="#coupling-board" id="toc-coupling-board" class="nav-link" data-scroll-target="#coupling-board">4. Coupling Board</a></li>
+  </ul></li>
+  <li><a href="#software" id="toc-software" class="nav-link" data-scroll-target="#software">Software</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -189,8 +202,90 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="hardware" class="level2">
+<h2 class="anchored" data-anchor-id="hardware">Hardware</h2>
+<p>The hardware consists of four main components. Each plays a role in interfacing with the system enclosure, signal routing, or I/O operations:</p>
+<section id="system-enclosure" class="level3">
+<h3 class="anchored" data-anchor-id="system-enclosure">1. System Enclosure</h3>
+<ul>
+<li><strong>Rack Box</strong>: Link to the rack box we order</li>
+<li><strong>Custom Front Panel</strong>: <a href="#sec-custom-panels">Front Panel</a></li>
+<li><strong>Assemble Picture</strong>:</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/enclosure.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" data-fig-cap="Rack Box with Front Panel Assemble" width="500"></p>
+</figure>
+</div>
+</section>
+<section id="input-board-stack" class="level3">
+<h3 class="anchored" data-anchor-id="input-board-stack">2. Input Board Stack</h3>
+<ul>
+<li><strong>Function</strong>:</li>
+<li><strong>Key Components</strong>:</li>
+<li><strong>PCB Info</strong>: Link to the PCB design that we documented in the website
+<ul>
+<li>Designed in Kicad</li>
+<li>Power:</li>
+<li>any notes that user might need when they try to figure out stuff(frequency/current) , datasheet-like style</li>
+</ul></li>
+<li><strong>Mechanical Support Design</strong>: link to the mechanical support</li>
+<li><strong>Assemble Picture</strong>: Provide a picture of 4 stack of input board</li>
+</ul>
+</section>
+<section id="output-board" class="level3">
+<h3 class="anchored" data-anchor-id="output-board">3. Output Board</h3>
+<ul>
+<li><strong>Function</strong>:</li>
+<li><strong>Key Components</strong>: BOM of output board</li>
+<li><strong>Mechanical Support Design</strong></li>
+<li><strong>PCB Notes</strong>: Link to the PCB design that we documented in the webiste
+<ul>
+<li>Two layer PCB board</li>
+</ul></li>
+</ul>
+</section>
+<section id="coupling-board" class="level3">
+<h3 class="anchored" data-anchor-id="coupling-board">4. Coupling Board</h3>
+<ul>
+<li><p><strong>Function</strong>: A two layer PCB board to offer a reliable and convience way to rout power and data through the enclosure to the internal elecrical system.</p></li>
+<li><p><strong>Key Components</strong>:</p>
+<ul>
+<li>Primary Board:
+<ul>
+<li>Micro-Fit 3.0 Vertical Header for power output</li>
+<li>2 x 12 pin Male IDC connector for data output</li>
+<li>6 pin Mini-Fit Jr.&nbsp;Vertical Header for power input</li>
+<li>25 position D Sub connector for data input</li>
+</ul></li>
+<li>Secondar Board:
+<ul>
+<li>25 position D Sub connector</li>
+<li>2 x 12 pin female’</li>
+</ul></li>
+</ul></li>
+<li><p><strong>Mechanical Design</strong></p>
+<ul>
+<li>Overview:</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/coupling_board_design.png" class="img-fluid quarto-figure quarto-figure-center figure-img" data-fig-cap="Coupling Board Overview" width="500"></p>
+</figure>
+</div>
+<ul>
+<li>Support panel link: <a href="#sec-custom-panels">Support Panel</a></li>
+<li>Instruction for Hole saw original back panel: Link</li>
+</ul></li>
+<li><p><strong>Assmbled Picture</strong>:</p></li>
+</ul>
+</section>
+</section>
+<section id="software" class="level2">
+<h2 class="anchored" data-anchor-id="software">Software</h2>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -275,8 +370,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -387,7 +480,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {

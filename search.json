@@ -1,10 +1,59 @@
 [
   {
+    "objectID": "Page_Ordering/custom_panels/custom_panels.html",
+    "href": "Page_Ordering/custom_panels/custom_panels.html",
+    "title": "Custom Panels",
+    "section": "",
+    "text": "In this project, we designed two custom panels:\n\nA front panel to replace the original Rack Box front panel, with cutouts for the SMA connectors from the output board.\nA support panel to provide mechanical stability.\n\nBoth panels were ordered through Front Panel Express."
+  },
+  {
+    "objectID": "Page_Ordering/custom_panels/custom_panels.html#overview",
+    "href": "Page_Ordering/custom_panels/custom_panels.html#overview",
+    "title": "Custom Panels",
+    "section": "",
+    "text": "In this project, we designed two custom panels:\n\nA front panel to replace the original Rack Box front panel, with cutouts for the SMA connectors from the output board.\nA support panel to provide mechanical stability.\n\nBoth panels were ordered through Front Panel Express."
+  },
+  {
+    "objectID": "Page_Ordering/custom_panels/custom_panels.html#panel-ordering-instructions",
+    "href": "Page_Ordering/custom_panels/custom_panels.html#panel-ordering-instructions",
+    "title": "Custom Panels",
+    "section": "Panel Ordering Instructions",
+    "text": "Panel Ordering Instructions\n\nGo to Front Panel Design website to download the latest software (we used version 6.4.1)\nOpen the FrontDesign software and go to File → New to create a new panel file. Then, follow the instructions in the image below to customize your panel design. \n\n*Notes: Material of your choice [To Do: explain different material choice]\n\nOn the top toolbar, you can choose to drill a hole, add a cutout, or insert a text label. The images below demonstrate how to add a hole and a label.\n\n  \n\nUse the measure tool to check the dimensions/position of the holes and cutouts. The images below show how to use the measure tool\n\n\n\n\nPanel Design Instructions 5\n\n\nNote: I recommend measuring at specific points such as Edges (E), Center of Hole (R), or Midpoint (M) — these indicators will appear when you hover over them. If no indicator pops up, the measurement may not be exactly at the desired point.\n\nOnce you are satisfied with the design, go to Order → Order Panel. This will direct you to the Front Panel Express ordering site to place your order. You can choose to order the panel as is or download the design file for future use."
+  },
+  {
+    "objectID": "Page_Ordering/custom_panels/custom_panels.html#sec-custom-panels",
+    "href": "Page_Ordering/custom_panels/custom_panels.html#sec-custom-panels",
+    "title": "Custom Panels",
+    "section": "Our Custom Panels for the Project",
+    "text": "Our Custom Panels for the Project\n\nFront Panel: The front panel was designed to fit the original Rack Box front panel, with cutouts for the SMA connectors and mounting holes for the output board and the panel itself. The material we used for this panel is anodize aluminum because ….. However …. [TODO]\n\n// TODO: Add image of the front panel design, and the file link to the design file\n\nSupport Panel: The support panel was designed to provide mechanical stability to the coupling board. It has 4 M3 mounting holes for the coupling board."
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
     "text": "This website tells you all that you need to know about QuACK."
+  },
+  {
+    "objectID": "Page_QuickStart/quickstart.html",
+    "href": "Page_QuickStart/quickstart.html",
+    "title": "Quick Start",
+    "section": "",
+    "text": "The hardware consists of four main components. Each plays a role in interfacing with the system enclosure, signal routing, or I/O operations:\n\n\n\nRack Box: Link to the rack box we order\nCustom Front Panel: Front Panel\nAssemble Picture:\n\n\n\n\n\n\n\n\n\n\nFunction:\nKey Components:\nPCB Info: Link to the PCB design that we documented in the website\n\nDesigned in Kicad\nPower:\nany notes that user might need when they try to figure out stuff(frequency/current) , datasheet-like style\n\nMechanical Support Design: link to the mechanical support\nAssemble Picture: Provide a picture of 4 stack of input board\n\n\n\n\n\nFunction:\nKey Components: BOM of output board\nMechanical Support Design\nPCB Notes: Link to the PCB design that we documented in the webiste\n\nTwo layer PCB board\n\n\n\n\n\n\nFunction: A two layer PCB board to offer a reliable and convience way to rout power and data through the enclosure to the internal elecrical system.\nKey Components:\n\nPrimary Board:\n\nMicro-Fit 3.0 Vertical Header for power output\n2 x 12 pin Male IDC connector for data output\n6 pin Mini-Fit Jr. Vertical Header for power input\n25 position D Sub connector for data input\n\nSecondar Board:\n\n25 position D Sub connector\n2 x 12 pin female’\n\n\nMechanical Design\n\nOverview:\n\n\n\n\n\n\n\nSupport panel link: Support Panel\nInstruction for Hole saw original back panel: Link\n\nAssmbled Picture:"
+  },
+  {
+    "objectID": "Page_QuickStart/quickstart.html#hardware",
+    "href": "Page_QuickStart/quickstart.html#hardware",
+    "title": "Quick Start",
+    "section": "",
+    "text": "The hardware consists of four main components. Each plays a role in interfacing with the system enclosure, signal routing, or I/O operations:\n\n\n\nRack Box: Link to the rack box we order\nCustom Front Panel: Front Panel\nAssemble Picture:\n\n\n\n\n\n\n\n\n\n\nFunction:\nKey Components:\nPCB Info: Link to the PCB design that we documented in the website\n\nDesigned in Kicad\nPower:\nany notes that user might need when they try to figure out stuff(frequency/current) , datasheet-like style\n\nMechanical Support Design: link to the mechanical support\nAssemble Picture: Provide a picture of 4 stack of input board\n\n\n\n\n\nFunction:\nKey Components: BOM of output board\nMechanical Support Design\nPCB Notes: Link to the PCB design that we documented in the webiste\n\nTwo layer PCB board\n\n\n\n\n\n\nFunction: A two layer PCB board to offer a reliable and convience way to rout power and data through the enclosure to the internal elecrical system.\nKey Components:\n\nPrimary Board:\n\nMicro-Fit 3.0 Vertical Header for power output\n2 x 12 pin Male IDC connector for data output\n6 pin Mini-Fit Jr. Vertical Header for power input\n25 position D Sub connector for data input\n\nSecondar Board:\n\n25 position D Sub connector\n2 x 12 pin female’\n\n\nMechanical Design\n\nOverview:\n\n\n\n\n\n\n\nSupport panel link: Support Panel\nInstruction for Hole saw original back panel: Link\n\nAssmbled Picture:"
+  },
+  {
+    "objectID": "Page_QuickStart/quickstart.html#software",
+    "href": "Page_QuickStart/quickstart.html#software",
+    "title": "Quick Start",
+    "section": "Software",
+    "text": "Software"
   },
   {
     "objectID": "index.html",

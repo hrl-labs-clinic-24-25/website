@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.56">
+<meta name="generator" content="quarto-1.6.42">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -35,10 +35,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-6bd9cfa162949bde0a231f530c97869d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -164,8 +164,16 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#panel-ordering-instructions" id="toc-panel-ordering-instructions" class="nav-link" data-scroll-target="#panel-ordering-instructions">Panel Ordering Instructions</a></li>
+  <li><a href="#sec-custom-panels" id="toc-sec-custom-panels" class="nav-link" data-scroll-target="#sec-custom-panels">Our Custom Panels for the Project</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -189,8 +197,52 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>In this project, we designed two custom panels:</p>
+<ul>
+<li>A <strong>front panel</strong> to replace the original Rack Box front panel, with cutouts for the SMA connectors from the output board.</li>
+<li>A <strong>support panel</strong> to provide mechanical stability.</li>
+</ul>
+<p>Both panels were ordered through <a href="https://www.frontpanelexpress.com/">Front Panel Express</a>.</p>
+</section>
+<section id="panel-ordering-instructions" class="level2">
+<h2 class="anchored" data-anchor-id="panel-ordering-instructions">Panel Ordering Instructions</h2>
+<ol type="1">
+<li><p>Go to <a href="https://www.frontpanelexpress.com/front-panel-designer/download">Front Panel Design</a> website to download the latest software (we used version 6.4.1)</p></li>
+<li><p>Open the FrontDesign software and go to File → New to create a new panel file. Then, follow the instructions in the image below to customize your panel design. <img src="images/front_design_instruction_1.png" class="img-fluid" alt="Panel Design Instructions 1"></p></li>
+</ol>
+<p>*Notes: Material of your choice [To Do: explain different material choice]</p>
+<ol start="3" type="1">
+<li>On the top toolbar, you can choose to drill a hole, add a cutout, or insert a text label. The images below demonstrate how to add a hole and a label.</li>
+</ol>
+<p><img src="images/front_design_instruction_2.png" class="img-fluid" alt="Panel Design Instructions 2"> <img src="images/front_design_instruction_3.png" class="img-fluid" alt="Panel Design Instructions 3"> <img src="images/front_design_instruction_4.png" class="img-fluid" alt="Panel Design Instructions 4"></p>
+<ol start="4" type="1">
+<li>Use the measure tool to check the dimensions/position of the holes and cutouts. The images below show how to use the measure tool</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/front_design_instruction_5.png" class="img-fluid figure-img"></p>
+<figcaption>Panel Design Instructions 5</figcaption>
+</figure>
+</div>
+<p><em>Note: I recommend measuring at specific points such as Edges (E), Center of Hole (R), or Midpoint (M) — these indicators will appear when you hover over them. If no indicator pops up, the measurement may not be exactly at the desired point.</em></p>
+<ol start="5" type="1">
+<li>Once you are satisfied with the design, go to Order → Order Panel. This will direct you to the Front Panel Express ordering site to place your order. You can choose to order the panel as is or download the design file for future use. <img src="images/front_design_instruction_6.png" class="img-fluid" alt="Panel Design Instructions 6"></li>
+</ol>
+</section>
+<section id="sec-custom-panels" class="level2">
+<h2 class="anchored" data-anchor-id="sec-custom-panels">Our Custom Panels for the Project</h2>
+<ul>
+<li><strong>Front Panel</strong>: The front panel was designed to fit the original Rack Box front panel, with cutouts for the SMA connectors and mounting holes for the output board and the panel itself. The material we used for this panel is anodize aluminum because ….. However …. [TODO]</li>
+</ul>
+<p>// TODO: Add image of the front panel design, and the file link to the design file</p>
+<ul>
+<li><strong>Support Panel</strong>: The support panel was designed to provide mechanical stability to the coupling board. It has 4 M3 mounting holes for the coupling board.</li>
+</ul>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -275,8 +327,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -387,7 +437,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {

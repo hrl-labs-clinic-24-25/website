@@ -1,3 +1,55 @@
 ---
 title: Quick Start
 ---
+
+## Hardware
+
+The hardware consists of four main components. Each plays a role in interfacing with the system enclosure, signal routing, or I/O operations:
+
+### 1. System Enclosure
+- **Rack Box**: Link to the rack box we order
+- **Custom Front Panel**: Link the detail instruction of front panel design/how to order them 
+- **Assemble Picture**: 
+
+![](images/enclosure.jpg){fig-align="center" fig-cap="Rack Box with Front Panel Assemble" width=500}
+
+
+### 2. Input Board Stack
+- **Function**: 
+- **Key Components**: 
+- **PCB Info**: Link to the PCB design that we documented in the webiste
+  - Designed in Kicad
+  - Power: 
+  - any notes that user might need when they try to figure out stuff(frequency/current) , datasheet-like style
+- **Mechanical Support Design**: link to the mechanical support
+- **Assemble Picture**: Provide a picture of 4 stack of input board
+
+### 3. Output Board
+- **Function**: 
+- **Key Components**: BOM of output board
+- **Mechanical Support Design**
+- **PCB Notes**: Link to the PCB design that we documented in the webiste
+  - Two layer PCB board
+
+### 4. Coupling Board
+- **Function**: A two layer PCB board to offer a reliable and convience way to rout power and data through the enclosure to the internal elecrical system.
+- **Key Components**:
+  - Primary Board:
+    - Micro-Fit 3.0 Vertical Header for power output
+    - 2 x 12 pin Male IDC connector for data output
+    - 6 pin Mini-Fit Jr. Vertical Header for power input
+    - 25 position D Sub connector for data input
+  - Secondar Board: 
+    - 25 position D Sub connector
+    - 2 x 12 pin female'
+- **Mechanical Design**
+    - Overview:
+
+    ![](images/coupling_board_design.png){fig-align="center" fig-cap="Coupling Board Overview" width=500}
+
+    - Support panel link: 
+    - Instruction for Hole saw original back panel
+- **Assmbled Picture**:
+
+
+## Software

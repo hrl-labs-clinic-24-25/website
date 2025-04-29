@@ -2,6 +2,6 @@
 title: Ordering Overview
 ---
 
-## [Ordering Custom Panels](./custom_panels/)
-## [Ordering Electronics(PCBs)](./electronics/)
-## [Ordering Standard Hardware](./standard_hardware)
+## [Ordering Custom Panels](./custom_panels/custom_panels.qmd)
+## [Ordering Electronics(PCBs)](./electronics/electronics.qmd)
+## [Ordering Standard Hardware](./standard_hardware/standard_hardware.qmd)

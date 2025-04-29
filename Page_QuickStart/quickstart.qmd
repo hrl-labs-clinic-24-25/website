@@ -1,6 +1,23 @@
 ---
-title: Quick Start
+title: Quack Start
 ---
+
+# TL;DR
+You will need the following items to correctly summon the QuACK. For more information on each step, see the Detailed Instructions tab above.
+
+- [ ] **1 working qick setup** including RFSoC, RFSoC accessories and software
+- [ ] 2 to 32 CN-0531 DAC boards
+- [ ] 1 to 4 QuACK input boards
+- [ ] 1 to 4 QuACK output boards
+- [ ] 1 QuACK coupling board
+- [ ] 1 6V power supply
+- [ ] 1 qickquack installation
+- [ ] Advanced power tooling
+- [ ] Beginner-friendly screwdriver
+- [ ] A fair bit of time
+- [ ] Some patience
+- [ ] Stale bread (quantity varies)
+ 
 
 ## Hardware
 
@@ -52,3 +69,9 @@ The hardware consists of four main components. Each plays a role in interfacing 
 
 
 ## Software
+QuACK expands on both the firmware and software aspects of QICK. 
+
+If you are content to use what we have provided (which should definitely be your starting place if you're just checking it out the first time), the two files you **need** are `quack.bit` and `quack.hwh`. If you want to edit the QuACK firmware, go you, because that's an advanced operation. See the Advanced Usage tab. 
+
+The software upgrades provided by QuACk are all contained in the `qickquack` package. You can use `pip install qickquack` to check it out on your laptop, but you'll need to follow the instuctions in Detailed Instructions > Installation if you want it on the RFSoC (the only place it's actually useful fyi).
+

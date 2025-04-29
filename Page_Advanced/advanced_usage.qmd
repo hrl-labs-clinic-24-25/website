@@ -1,0 +1,6 @@
+---
+title: Advanced QuACK Usage
+---
+Hello, fancypants. If you're here, it's because you aren't happy with what we did (hey, we're college kids) and/or you have an awesome idea that never occured to us. We thought this might happen so we left some notes to help you get started.
+
+## [Editing the QuACK firmware](./edit_firmware/edit_firmware.qmd)

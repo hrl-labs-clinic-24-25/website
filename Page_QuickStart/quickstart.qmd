@@ -73,5 +73,5 @@ QuACK expands on both the firmware and software aspects of QICK.
 
 If you are content to use what we have provided (which should definitely be your starting place if you're just checking it out the first time), the two files you **need** are `quack.bit` and `quack.hwh`. If you want to edit the QuACK firmware, go you, because that's an advanced operation. See the Advanced Usage tab. 
 
-The software upgrades provided by QuACk are all contained in the `qickquack` package. You can use `pip install qickquack` to check it out on your laptop, but you'll need to follow the instuctions in Detailed Instructions > Installation if you want it on the RFSoC (the only place it's actually useful fyi).
+The software upgrades provided by QuACK are all contained in the `qickquack` package. You can use `pip install qickquack` to check it out on your laptop, but you'll need to follow the instuctions in Detailed Instructions > Installation if you want it on the RFSoC (the only place it's actually useful fyi).
 

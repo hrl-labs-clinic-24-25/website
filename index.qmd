@@ -2,7 +2,7 @@
 title: "QUACK"
 ---
 
-![](images/placeholder_Landing_Page.jpg)
+![Art by Zoe Worrall](images/quack_duck_swirl.png)
 
 This is a Quarto website.
 

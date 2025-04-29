@@ -90,47 +90,24 @@ ul.task-list li input[type="checkbox"] {
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link" href="../../Page_QuickStart/quickstart.html"> 
-<span class="menu-text">Quick Start</span></a>
+<span class="menu-text">Quack Start</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-ordering" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Ordering</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-detailed-instructions" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Detailed Instructions</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-ordering">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-detailed-instructions">    
         <li>
     <a class="dropdown-item" href="../../Page_Ordering/ordering_overview.html">
- <span class="dropdown-text">Overview</span></a>
+ <span class="dropdown-text">Ordering</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../Page_Ordering/electronics/electronics.html">
- <span class="dropdown-text">Electronics</span></a>
+    <a class="dropdown-item" href="../../Page_Assembly/assembly_overview.html">
+ <span class="dropdown-text">Assembly</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../Page_Ordering/custom_panels/custom_panels.html">
- <span class="dropdown-text">Custom Panels</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../Page_Ordering/standard_hardware/standard_hardware.html">
- <span class="dropdown-text">Standard Hardware</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="../../Page_Assembly/assembly_overview.html"> 
-<span class="menu-text">Assembly</span></a>
-  </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-software" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Software</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-software">    
-        <li>
-    <a class="dropdown-item" href="../../Page_Software/software_overview.html">
- <span class="dropdown-text">Overview</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../Page_Software/example_sw/example_sw.html">
- <span class="dropdown-text">Example SW?</span></a>
+    <a class="dropdown-item" href="../../Page_Installation/installation.html">
+ <span class="dropdown-text">Installation</span></a>
   </li>  
     </ul>
   </li>
@@ -164,8 +141,16 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#pcb-fabrication-files" id="toc-pcb-fabrication-files" class="nav-link" data-scroll-target="#pcb-fabrication-files">PCB Fabrication Files</a></li>
+  <li><a href="#pcb-ordering-instructions-throgh-jlcpcb" id="toc-pcb-ordering-instructions-throgh-jlcpcb" class="nav-link" data-scroll-target="#pcb-ordering-instructions-throgh-jlcpcb">PCB Ordering Instructions throgh JLCPCB</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -189,8 +174,58 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>In this project, we designed three custom PCB:</p>
+<ul>
+<li>A <strong>input board</strong></li>
+<li>A <strong>output board</strong></li>
+<li>A <strong>coupling board</strong></li>
+</ul>
+<p>All of our custom PCB were ordered through <a href="https://jlcpcb.com/">JLCPCB</a></p>
+</section>
+<section id="pcb-fabrication-files" class="level2">
+<h2 class="anchored" data-anchor-id="pcb-fabrication-files">PCB Fabrication Files</h2>
+<p>Here are the links to our PCB fabrication files:</p>
+<ul>
+<li><a href="https://github.com/hrl-labs-clinic-24-25/hardware-fabrication/tree/main/Input_Board">Input Board</a></li>
+<li><a href="https://github.com/hrl-labs-clinic-24-25/hardware-fabrication/tree/main/output_board">Output Board</a></li>
+<li><a href="https://github.com/hrl-labs-clinic-24-25/hardware-fabrication/tree/main/coupling_board">Coupling Board</a></li>
+</ul>
+<p>Each link contains three neccessary files for ordering the PCB:</p>
+<ul>
+<li><strong>Gerber Files</strong>: These files contain the information needed to manufacture the PCB, including the copper layers, solder mask, and silkscreen.</li>
+<li><strong>BOM (Bill of Materials)</strong>: This file lists all the components required for the PCB, including their specifications and quantities.</li>
+<li><strong>CPL (Centroid File)</strong>: This file provides the coordinates of each component on the PCB, which is essential for automated assembly processes.</li>
+</ul>
+</section>
+<section id="pcb-ordering-instructions-throgh-jlcpcb" class="level2">
+<h2 class="anchored" data-anchor-id="pcb-ordering-instructions-throgh-jlcpcb">PCB Ordering Instructions throgh JLCPCB</h2>
+<ol type="1">
+<li><p>Go to <a href="https://jlcpcb.com/">JLCPCB</a> and create an account if you don’t have one. <em>Note: you ust have an account to place an order.</em></p></li>
+<li><p>Sign in to your account <img src="images/pcb_ordering_instruction_1.png" class="img-fluid" alt="PCB Ordering"></p></li>
+<li><p>Upload your Gerger files as indicate in the image below. <img src="images/pcb_ordering_instruction_2.png" class="img-fluid"></p></li>
+<li><p>Then it will show the options for selecting the PCB specifications, such as size, quantity, and color. We recommended using the these following options:</p>
+<ul>
+<li><p>Choose Plugged for Via Covering <img src="images/pcb_ordering_instruction_3.png" class="img-fluid"></p></li>
+<li><p>Choose “Standard” PCB.</p></li>
+</ul>
+<p><em>Note: if you have a two layer PCB, you <strong>have</strong> to choose “Standard” and assemble “Both Sides”</em> <img src="images/pcb_ordering_instruction_4.png" class="img-fluid"></p>
+<ul>
+<li>Choose “Confirm Part Placements” <img src="images/pcb_ordering_instruction_5.png" class="img-fluid"></li>
+</ul></li>
+<li><p>Continue to the next step by clicking “Next” <img src="images/pcb_ordering_instruction_6.png" class="img-fluid"></p></li>
+<li><p>Upload your BOM and CPL files then click “Proceed BOM &amp; CPL” <img src="images/pcb_ordering_instruction_7.png" class="img-fluid"></p></li>
+<li><p>Confirm your parts and Continue to the next step by clicking “Next” <img src="images/pcb_ordering_instruction_8.png" class="img-fluid"></p></li>
+<li><p>Continue to the next step by clicking “Next”</p></li>
+</ol>
+<p><em>Note: It’s Ok that your part are not align well, the there will be engineer from JLCPCB contact you (email) fix the alignment and confirm the PCB design with you</em> <img src="images/pcb_ordering_instruction_9.png" class="img-fluid"></p>
+<ol start="9" type="1">
+<li>Click “Save to the cart” and ready to order! <img src="images/pcb_ordering_instruction_10.png" class="img-fluid"></li>
+</ol>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

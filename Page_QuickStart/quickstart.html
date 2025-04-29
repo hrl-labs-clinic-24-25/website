@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Quick Start – QUACK</title>
+<title>Quack Start – QUACK</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -90,47 +90,24 @@ ul.task-list li input[type="checkbox"] {
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link active" href="../Page_QuickStart/quickstart.html" aria-current="page"> 
-<span class="menu-text">Quick Start</span></a>
+<span class="menu-text">Quack Start</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-ordering" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Ordering</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-detailed-instructions" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Detailed Instructions</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-ordering">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-detailed-instructions">    
         <li>
     <a class="dropdown-item" href="../Page_Ordering/ordering_overview.html">
- <span class="dropdown-text">Overview</span></a>
+ <span class="dropdown-text">Ordering</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../Page_Ordering/electronics/electronics.html">
- <span class="dropdown-text">Electronics</span></a>
+    <a class="dropdown-item" href="../Page_Assembly/assembly_overview.html">
+ <span class="dropdown-text">Assembly</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../Page_Ordering/custom_panels/custom_panels.html">
- <span class="dropdown-text">Custom Panels</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../Page_Ordering/standard_hardware/standard_hardware.html">
- <span class="dropdown-text">Standard Hardware</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="../Page_Assembly/assembly_overview.html"> 
-<span class="menu-text">Assembly</span></a>
-  </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-software" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Software</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-software">    
-        <li>
-    <a class="dropdown-item" href="../Page_Software/software_overview.html">
- <span class="dropdown-text">Overview</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../Page_Software/example_sw/example_sw.html">
- <span class="dropdown-text">Example SW?</span></a>
+    <a class="dropdown-item" href="../Page_Installation/installation.html">
+ <span class="dropdown-text">Installation</span></a>
   </li>  
     </ul>
   </li>
@@ -169,14 +146,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#hardware" id="toc-hardware" class="nav-link active" data-scroll-target="#hardware">Hardware</a>
+  <li><a href="#tldr" id="toc-tldr" class="nav-link active" data-scroll-target="#tldr">TL;DR</a>
   <ul class="collapse">
-  <li><a href="#system-enclosure" id="toc-system-enclosure" class="nav-link" data-scroll-target="#system-enclosure">1. System Enclosure</a></li>
-  <li><a href="#input-board-stack" id="toc-input-board-stack" class="nav-link" data-scroll-target="#input-board-stack">2. Input Board Stack</a></li>
-  <li><a href="#output-board" id="toc-output-board" class="nav-link" data-scroll-target="#output-board">3. Output Board</a></li>
-  <li><a href="#coupling-board" id="toc-coupling-board" class="nav-link" data-scroll-target="#coupling-board">4. Coupling Board</a></li>
-  </ul></li>
+  <li><a href="#hardware" id="toc-hardware" class="nav-link" data-scroll-target="#hardware">Hardware</a></li>
   <li><a href="#software" id="toc-software" class="nav-link" data-scroll-target="#software">Software</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -185,7 +159,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Quick Start</h1>
+<h1 class="title">Quack Start</h1>
 </div>
 
 
@@ -202,89 +176,44 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="tldr" class="level1">
+<h1>TL;DR</h1>
+<p>You will need the following items to correctly summon the QuACK. For more information on each step, see the Detailed Instructions tab above.</p>
+<ul class="task-list">
+<li><label><input type="checkbox"><strong>1 working qick setup</strong> including RFSoC, RFSoC accessories and software</label></li>
+<li><label><input type="checkbox">2 to 32 CN-0531 DAC boards</label></li>
+<li><label><input type="checkbox">1 to 4 QuACK input boards</label></li>
+<li><label><input type="checkbox">1 to 4 QuACK output boards</label></li>
+<li><label><input type="checkbox">1 QuACK coupling board</label></li>
+<li><label><input type="checkbox">1 6V power supply</label></li>
+<li><label><input type="checkbox">1 qickquack installation</label></li>
+<li><label><input type="checkbox">Advanced power tooling</label></li>
+<li><label><input type="checkbox">Beginner-friendly screwdriver</label></li>
+<li><label><input type="checkbox">A fair bit of time</label></li>
+<li><label><input type="checkbox">Some patience</label></li>
+<li><label><input type="checkbox">Stale bread (quantity varies)</label></li>
+</ul>
 <section id="hardware" class="level2">
 <h2 class="anchored" data-anchor-id="hardware">Hardware</h2>
-<p>The hardware consists of four main components. Each plays a role in interfacing with the system enclosure, signal routing, or I/O operations:</p>
-<section id="system-enclosure" class="level3">
-<h3 class="anchored" data-anchor-id="system-enclosure">1. System Enclosure</h3>
-<ul>
-<li><strong>Rack Box</strong>: Link to the rack box we order</li>
-<li><strong>Custom Front Panel</strong>: <a href="#sec-custom-panels">Front Panel</a></li>
-<li><strong>Assemble Picture</strong>:</li>
+<p>Here’s the list of hardware you will need to assemble a QuACK system. For more information on each step, see the Detailed Instructions tab above.</p>
+<ul class="task-list">
+<li><label><input type="checkbox">(1) <a href="./standard_hardware/standard_hardware.qmd">19’’ Rack Box Enclosure</a></label></li>
+<li><label><input type="checkbox">(1) <a href="./custom_panels/custom_panels.qmd">Custom Front Panel</a></label></li>
+<li><label><input type="checkbox">(1) <a href="./custom_panels/custom_panels.qmd">Custom Support Panel</a></label></li>
+<li><label><input type="checkbox">(1-4) <a href="./electronics/electronics.qmd">Custom Output PCB Board</a></label></li>
+<li><label><input type="checkbox">(1-4) <a href="./electronics/electronics.qmd">Custom Input PCB Board</a></label></li>
+<li><label><input type="checkbox">(1) <a href="./electronics/electronics.qmd">Custom Coupling PCB Board</a></label></li>
+<li><label><input type="checkbox"><a href="./standard_hardware/standard_hardware.qmd">List of the supporting standard hardware</a></label></li>
 </ul>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/enclosure.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" data-fig-cap="Rack Box with Front Panel Assemble" width="500"></p>
-</figure>
-</div>
-</section>
-<section id="input-board-stack" class="level3">
-<h3 class="anchored" data-anchor-id="input-board-stack">2. Input Board Stack</h3>
-<ul>
-<li><strong>Function</strong>:</li>
-<li><strong>Key Components</strong>:</li>
-<li><strong>PCB Info</strong>: Link to the PCB design that we documented in the website
-<ul>
-<li>Designed in Kicad</li>
-<li>Power:</li>
-<li>any notes that user might need when they try to figure out stuff(frequency/current) , datasheet-like style</li>
-</ul></li>
-<li><strong>Mechanical Support Design</strong>: link to the mechanical support</li>
-<li><strong>Assemble Picture</strong>: Provide a picture of 4 stack of input board</li>
-</ul>
-</section>
-<section id="output-board" class="level3">
-<h3 class="anchored" data-anchor-id="output-board">3. Output Board</h3>
-<ul>
-<li><strong>Function</strong>:</li>
-<li><strong>Key Components</strong>: BOM of output board</li>
-<li><strong>Mechanical Support Design</strong></li>
-<li><strong>PCB Notes</strong>: Link to the PCB design that we documented in the webiste
-<ul>
-<li>Two layer PCB board</li>
-</ul></li>
-</ul>
-</section>
-<section id="coupling-board" class="level3">
-<h3 class="anchored" data-anchor-id="coupling-board">4. Coupling Board</h3>
-<ul>
-<li><p><strong>Function</strong>: A two layer PCB board to offer a reliable and convience way to rout power and data through the enclosure to the internal elecrical system.</p></li>
-<li><p><strong>Key Components</strong>:</p>
-<ul>
-<li>Primary Board:
-<ul>
-<li>Micro-Fit 3.0 Vertical Header for power output</li>
-<li>2 x 12 pin Male IDC connector for data output</li>
-<li>6 pin Mini-Fit Jr.&nbsp;Vertical Header for power input</li>
-<li>25 position D Sub connector for data input</li>
-</ul></li>
-<li>Secondar Board:
-<ul>
-<li>25 position D Sub connector</li>
-<li>2 x 12 pin female’</li>
-</ul></li>
-</ul></li>
-<li><p><strong>Mechanical Design</strong></p>
-<ul>
-<li>Overview:</li>
-</ul>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/coupling_board_design.png" class="img-fluid quarto-figure quarto-figure-center figure-img" data-fig-cap="Coupling Board Overview" width="500"></p>
-</figure>
-</div>
-<ul>
-<li>Support panel link: <a href="#sec-custom-panels">Support Panel</a></li>
-<li>Instruction for Hole saw original back panel: Link</li>
-</ul></li>
-<li><p><strong>Assmbled Picture</strong>:</p></li>
-</ul>
-</section>
 </section>
 <section id="software" class="level2">
 <h2 class="anchored" data-anchor-id="software">Software</h2>
+<p>QuACK expands on both the firmware and software aspects of QICK.</p>
+<p>If you are content to use what we have provided (which should definitely be your starting place if you’re just checking it out the first time), the two files you <strong>need</strong> are <code>quack.bit</code> and <code>quack.hwh</code>. If you want to edit the QuACK firmware, go you, because that’s an advanced operation. See the Advanced Usage tab.</p>
+<p>The software upgrades provided by QuACK are all contained in the <code>qickquack</code> package. You can use <code>pip install qickquack</code> to check it out on your laptop, but you’ll need to follow the instuctions in Detailed Instructions &gt; Installation if you want it on the RFSoC (the only place it’s actually useful fyi).</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

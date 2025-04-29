@@ -25,7 +25,35 @@
     "href": "Page_Ordering/custom_panels/custom_panels.html#sec-custom-panels",
     "title": "Custom Panels",
     "section": "Our Custom Panels for the Project",
-    "text": "Our Custom Panels for the Project\n\nFront Panel: The front panel was designed to fit the original Rack Box front panel, with cutouts for the SMA connectors and mounting holes for the output board and the panel itself. The material we used for this panel is anodize aluminum because ….. However …. [TODO]\n\n// TODO: Add image of the front panel design, and the file link to the design file\n\nSupport Panel: The support panel was designed to provide mechanical stability to the coupling board. It has 4 M3 mounting holes for the coupling board."
+    "text": "Our Custom Panels for the Project\n\nDownload the design files for the front panel and support panel from the links below:\n\nFront Panel Design File\nSupport Panel Design File\n\nOpen the Front Panel Express software and go to File → Import to open the downloaded design files. \nReview the design files to ensure they meet your requirements. You can make any necessary adjustments using the Front Panel Express software.\nOnce you are satisfied with the design, go to Order → Order Panel. This will direct you to the Front Panel Express ordering site to place your order(same as in step 5 above). You can choose to order the panel as is or download the design file for future use.\n\nMore detailed documentation of each panel design can be found in ______ (TODO: add link to detailed documentation)."
+  },
+  {
+    "objectID": "Page_Ordering/standard_hardware/standard_hardware.html",
+    "href": "Page_Ordering/standard_hardware/standard_hardware.html",
+    "title": "Standard Hardware",
+    "section": "",
+    "text": "In this project, we purchase some standard hardware components to assemble the QuACK system. We will provide links to the components we used, along with brief descriptions of their purpose."
+  },
+  {
+    "objectID": "Page_Ordering/standard_hardware/standard_hardware.html#overview",
+    "href": "Page_Ordering/standard_hardware/standard_hardware.html#overview",
+    "title": "Standard Hardware",
+    "section": "",
+    "text": "In this project, we purchase some standard hardware components to assemble the QuACK system. We will provide links to the components we used, along with brief descriptions of their purpose."
+  },
+  {
+    "objectID": "Page_Ordering/standard_hardware/standard_hardware.html#order-check-list",
+    "href": "Page_Ordering/standard_hardware/standard_hardware.html#order-check-list",
+    "title": "Standard Hardware",
+    "section": "Order Check List",
+    "text": "Order Check List\n\n(1) 19’’ Rack Box Enclosure\n(32) CN-0531 DAC Boards\n(4) Pin Jumper (2-pos, 0.100” pitch)\n(27) PCB Standoffs\n(19) Steel M3 Nuts\n(7) Short Screw\n(12) Long Screw\n(12) 5.3mm Nylon M3 Spacer\n(12) 3.3mm Nylon M3 Spacer\n(32) JST PH 2-Pin Female 4” cable\n(1)Microfit Power Cable\n(8) Ribbon Cable Connector (2x12 Female)\nRibbon Cable (1.27mm, 28AWG, 24cond)\n(1)male to male 25pin DSUB cable"
+  },
+  {
+    "objectID": "Page_Ordering/standard_hardware/standard_hardware.html#order-details",
+    "href": "Page_Ordering/standard_hardware/standard_hardware.html#order-details",
+    "title": "Standard Hardware",
+    "section": "Order Details",
+    "text": "Order Details\n\n19’’ Rack Box Enclosure:\n\nPurpose: This enclosure serves as the main housing for the QuACK system, providing protection and organization for the internal components.\nLink: 3U Rack Box Enclosure\nDatasheet: Rack Box Enclosure Datasheet \n\nCN-0531 DAC Boards:\n\nPurpose: These boards are used for digital-to-analog conversion, allowing the QuACK system to output analog signals.\nLink: DAC board\nDatasheet: CN-0531 DAC Board Datasheet \n\nPin Jumper (2-pos, 0.100” pitch):\n\nPurpose: These jumpers are used to connect the DAC boards to the QuACK system, allowing for communication and control.\nLink: Pin Jumper\nDatasheet: Pin Jumper Datasheet \n\nPCB Standoffs:\n\nPurpose: These standoffs are used to secure the input board into a stacked configuration within the QuACK system, providing mechanical stability and separation between components.\nLink: PCB Standoffs\nDatasheet: PCB Standoff Datasheet \n\nSteel M3 Nuts:\n\nPurpose: These nuts are used in conjunction with the PCB standoffs to secure the input/output/coupling board and other components within the QuACK system.\nLink: Steel M3 Nuts\nDatasheet: Steel M3 Nuts Datasheet \n\nShort Screw:\n\nPurpose: These screws are used to secure various components within the QuACK system, including the input and output boards.\nLink: Short Screw\nDatasheet: Short Screw Datasheet \n\nLong Screw:\n\nPurpose: These screws are used to secure the input and output boards within the QuACK system, providing stability and mechanical support.\nLink: Long Screw\nDatasheet: Long Screw Datasheet \n\n5.3mm Nylon M3 Spacer:\n\nPurpose: These spacers are used to create a gap between the input/output boards.\nLink: 5.3mm Nylon M3 Spacer\nDatasheet: 5.3mm Nylon M3 Spacer Datasheet \n\n3.3mm Nylon M3 Spacer:\n\nPurpose: These spacers are used to create a gap between the input/output boards.\nLink: 3.3mm Nylon M3 Spacer\nDatasheet: 3.3mm Nylon M3 Spacer Datasheet \n\nJST PH 2-Pin Female 4’’ cable:\n\nPurpose: These cables are used to connect the DAC boards to the QuACK system, allowing for communication and control.\nLink: JST PH 2-Pin Female 4” cable\n\nDatasheet: JST PH 2-Pin Female 4” cable Datasheet \n\nMicrofit Power Cable:\n\nPurpose: This cable is used to provide power to the QuACK system\nLink: Microfit Power Cable\nDatasheet: Microfit Power Cable Datasheet \n\nRibbon Cable Connector\n\nPurpose: These connectors are used to connect the ribbon cable to the QuACK system, allowing for communication and control between components.\nLink: Ribbon Cable Connector (2x12 female)\nDatasheet: Ribbon Cable Connector Datasheet \n\nRibbon Cable (1.27mm, 28AWG, 24cond):\n\nPurpose: This ribbon cable is used to connect the QuACK system to various components, allowing for communication and control.\nLink: Ribbon Cable (1.27mm, 28AWG, 24cond)\nDatasheet: Ribbon Cable Datasheet \n\nMale to male 25pin DSUB cable:\n\nPurpose: This cable is used to connect the QuACK system to the FPGA through the coupling board, allowing for communication and control.\nLink: Female to Female 25pin DSUB cable"
   },
   {
     "objectID": "about.html",
@@ -35,31 +63,129 @@
     "text": "This website tells you all that you need to know about QuACK."
   },
   {
+    "objectID": "Page_Documentation/software_doc/software_doc.html#python-api",
+    "href": "Page_Documentation/software_doc/software_doc.html#python-api",
+    "title": "Non-Hardware Documentation",
+    "section": "Python API",
+    "text": "Python API"
+  },
+  {
+    "objectID": "Page_Installation/installation.html",
+    "href": "Page_Installation/installation.html",
+    "title": "Software Installation",
+    "section": "",
+    "text": "Before You Start…\n\n\n\nThis page assumes that you already have a working installation of qick. If you don’t, please follow qick’s quick start guide before continuing here."
+  },
+  {
+    "objectID": "Page_Installation/installation.html#clone-the-qickquack-repository",
+    "href": "Page_Installation/installation.html#clone-the-qickquack-repository",
+    "title": "Software Installation",
+    "section": "Clone the qickquack repository",
+    "text": "Clone the qickquack repository"
+  },
+  {
+    "objectID": "Page_Installation/installation.html#move-to-rfsoc",
+    "href": "Page_Installation/installation.html#move-to-rfsoc",
+    "title": "Software Installation",
+    "section": "Move to RFSoC",
+    "text": "Move to RFSoC"
+  },
+  {
+    "objectID": "Page_Installation/installation.html#install-qickquack-locally",
+    "href": "Page_Installation/installation.html#install-qickquack-locally",
+    "title": "Software Installation",
+    "section": "Install qickquack locally",
+    "text": "Install qickquack locally"
+  },
+  {
+    "objectID": "Page_Installation/installation.html#run-test-notebook",
+    "href": "Page_Installation/installation.html#run-test-notebook",
+    "title": "Software Installation",
+    "section": "Run test notebook",
+    "text": "Run test notebook"
+  },
+  {
+    "objectID": "Page_Advanced/advanced_usage.html",
+    "href": "Page_Advanced/advanced_usage.html",
+    "title": "Advanced QuACK Usage",
+    "section": "",
+    "text": "Hello, fancypants. If you’re here, it’s because you aren’t happy with what we did (hey, we’re college kids) and/or you have an awesome idea that never occured to us. We thought this might happen so we left some notes to help you get started."
+  },
+  {
+    "objectID": "Page_Advanced/advanced_usage.html#editing-the-quack-firmware",
+    "href": "Page_Advanced/advanced_usage.html#editing-the-quack-firmware",
+    "title": "Advanced QuACK Usage",
+    "section": "Editing the QuACK firmware",
+    "text": "Editing the QuACK firmware"
+  },
+  {
     "objectID": "Page_QuickStart/quickstart.html",
     "href": "Page_QuickStart/quickstart.html",
-    "title": "Quick Start",
+    "title": "Quack Start",
     "section": "",
-    "text": "The hardware consists of four main components. Each plays a role in interfacing with the system enclosure, signal routing, or I/O operations:\n\n\n\nRack Box: Link to the rack box we order\nCustom Front Panel: Front Panel\nAssemble Picture:\n\n\n\n\n\n\n\n\n\n\nFunction:\nKey Components:\nPCB Info: Link to the PCB design that we documented in the website\n\nDesigned in Kicad\nPower:\nany notes that user might need when they try to figure out stuff(frequency/current) , datasheet-like style\n\nMechanical Support Design: link to the mechanical support\nAssemble Picture: Provide a picture of 4 stack of input board\n\n\n\n\n\nFunction:\nKey Components: BOM of output board\nMechanical Support Design\nPCB Notes: Link to the PCB design that we documented in the webiste\n\nTwo layer PCB board\n\n\n\n\n\n\nFunction: A two layer PCB board to offer a reliable and convience way to rout power and data through the enclosure to the internal elecrical system.\nKey Components:\n\nPrimary Board:\n\nMicro-Fit 3.0 Vertical Header for power output\n2 x 12 pin Male IDC connector for data output\n6 pin Mini-Fit Jr. Vertical Header for power input\n25 position D Sub connector for data input\n\nSecondar Board:\n\n25 position D Sub connector\n2 x 12 pin female’\n\n\nMechanical Design\n\nOverview:\n\n\n\n\n\n\n\nSupport panel link: Support Panel\nInstruction for Hole saw original back panel: Link\n\nAssmbled Picture:"
+    "text": "You will need the following items to correctly summon the QuACK. For more information on each step, see the Detailed Instructions tab above.\n\n1 working qick setup including RFSoC, RFSoC accessories and software\n2 to 32 CN-0531 DAC boards\n1 to 4 QuACK input boards\n1 to 4 QuACK output boards\n1 QuACK coupling board\n1 6V power supply\n1 qickquack installation\nAdvanced power tooling\nBeginner-friendly screwdriver\nA fair bit of time\nSome patience\nStale bread (quantity varies)\n\n\n\nHere’s the list of hardware you will need to assemble a QuACK system. For more information on each step, see the Detailed Instructions tab above.\n\n(1) 19’’ Rack Box Enclosure\n(1) Custom Front Panel\n(1) Custom Support Panel\n(1-4) Custom Output PCB Board\n(1-4) Custom Input PCB Board\n(1) Custom Coupling PCB Board\nList of the supporting standard hardware\n\n\n\n\nQuACK expands on both the firmware and software aspects of QICK.\nIf you are content to use what we have provided (which should definitely be your starting place if you’re just checking it out the first time), the two files you need are quack.bit and quack.hwh. If you want to edit the QuACK firmware, go you, because that’s an advanced operation. See the Advanced Usage tab.\nThe software upgrades provided by QuACK are all contained in the qickquack package. You can use pip install qickquack to check it out on your laptop, but you’ll need to follow the instuctions in Detailed Instructions &gt; Installation if you want it on the RFSoC (the only place it’s actually useful fyi)."
   },
   {
     "objectID": "Page_QuickStart/quickstart.html#hardware",
     "href": "Page_QuickStart/quickstart.html#hardware",
-    "title": "Quick Start",
+    "title": "Quack Start",
     "section": "",
-    "text": "The hardware consists of four main components. Each plays a role in interfacing with the system enclosure, signal routing, or I/O operations:\n\n\n\nRack Box: Link to the rack box we order\nCustom Front Panel: Front Panel\nAssemble Picture:\n\n\n\n\n\n\n\n\n\n\nFunction:\nKey Components:\nPCB Info: Link to the PCB design that we documented in the website\n\nDesigned in Kicad\nPower:\nany notes that user might need when they try to figure out stuff(frequency/current) , datasheet-like style\n\nMechanical Support Design: link to the mechanical support\nAssemble Picture: Provide a picture of 4 stack of input board\n\n\n\n\n\nFunction:\nKey Components: BOM of output board\nMechanical Support Design\nPCB Notes: Link to the PCB design that we documented in the webiste\n\nTwo layer PCB board\n\n\n\n\n\n\nFunction: A two layer PCB board to offer a reliable and convience way to rout power and data through the enclosure to the internal elecrical system.\nKey Components:\n\nPrimary Board:\n\nMicro-Fit 3.0 Vertical Header for power output\n2 x 12 pin Male IDC connector for data output\n6 pin Mini-Fit Jr. Vertical Header for power input\n25 position D Sub connector for data input\n\nSecondar Board:\n\n25 position D Sub connector\n2 x 12 pin female’\n\n\nMechanical Design\n\nOverview:\n\n\n\n\n\n\n\nSupport panel link: Support Panel\nInstruction for Hole saw original back panel: Link\n\nAssmbled Picture:"
+    "text": "Here’s the list of hardware you will need to assemble a QuACK system. For more information on each step, see the Detailed Instructions tab above.\n\n(1) 19’’ Rack Box Enclosure\n(1) Custom Front Panel\n(1) Custom Support Panel\n(1-4) Custom Output PCB Board\n(1-4) Custom Input PCB Board\n(1) Custom Coupling PCB Board\nList of the supporting standard hardware"
   },
   {
     "objectID": "Page_QuickStart/quickstart.html#software",
     "href": "Page_QuickStart/quickstart.html#software",
-    "title": "Quick Start",
-    "section": "Software",
-    "text": "Software"
+    "title": "Quack Start",
+    "section": "",
+    "text": "QuACK expands on both the firmware and software aspects of QICK.\nIf you are content to use what we have provided (which should definitely be your starting place if you’re just checking it out the first time), the two files you need are quack.bit and quack.hwh. If you want to edit the QuACK firmware, go you, because that’s an advanced operation. See the Advanced Usage tab.\nThe software upgrades provided by QuACK are all contained in the qickquack package. You can use pip install qickquack to check it out on your laptop, but you’ll need to follow the instuctions in Detailed Instructions &gt; Installation if you want it on the RFSoC (the only place it’s actually useful fyi)."
+  },
+  {
+    "objectID": "Page_Advanced/edit_firmware/edit_firmware.html",
+    "href": "Page_Advanced/edit_firmware/edit_firmware.html",
+    "title": "Editing the QuACK firmware",
+    "section": "",
+    "text": "This is where Zoe/Cam copy paste a large chunk of the final report lol"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "QUACK",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "Art by Zoe Worrall\n\n\nThis is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "Page_Ordering/electronics/electronics.html",
+    "href": "Page_Ordering/electronics/electronics.html",
+    "title": "Electronics",
+    "section": "",
+    "text": "In this project, we designed three custom PCB:\n\nA input board\nA output board\nA coupling board\n\nAll of our custom PCB were ordered through JLCPCB"
+  },
+  {
+    "objectID": "Page_Ordering/electronics/electronics.html#overview",
+    "href": "Page_Ordering/electronics/electronics.html#overview",
+    "title": "Electronics",
+    "section": "",
+    "text": "In this project, we designed three custom PCB:\n\nA input board\nA output board\nA coupling board\n\nAll of our custom PCB were ordered through JLCPCB"
+  },
+  {
+    "objectID": "Page_Ordering/electronics/electronics.html#pcb-fabrication-files",
+    "href": "Page_Ordering/electronics/electronics.html#pcb-fabrication-files",
+    "title": "Electronics",
+    "section": "PCB Fabrication Files",
+    "text": "PCB Fabrication Files\nHere are the links to our PCB fabrication files:\n\nInput Board\nOutput Board\nCoupling Board\n\nEach link contains three neccessary files for ordering the PCB:\n\nGerber Files: These files contain the information needed to manufacture the PCB, including the copper layers, solder mask, and silkscreen.\nBOM (Bill of Materials): This file lists all the components required for the PCB, including their specifications and quantities.\nCPL (Centroid File): This file provides the coordinates of each component on the PCB, which is essential for automated assembly processes."
+  },
+  {
+    "objectID": "Page_Ordering/electronics/electronics.html#pcb-ordering-instructions-throgh-jlcpcb",
+    "href": "Page_Ordering/electronics/electronics.html#pcb-ordering-instructions-throgh-jlcpcb",
+    "title": "Electronics",
+    "section": "PCB Ordering Instructions throgh JLCPCB",
+    "text": "PCB Ordering Instructions throgh JLCPCB\n\nGo to JLCPCB and create an account if you don’t have one. Note: you ust have an account to place an order.\nSign in to your account \nUpload your Gerger files as indicate in the image below. \nThen it will show the options for selecting the PCB specifications, such as size, quantity, and color. We recommended using the these following options:\n\nChoose Plugged for Via Covering \nChoose “Standard” PCB.\n\nNote: if you have a two layer PCB, you have to choose “Standard” and assemble “Both Sides” \n\nChoose “Confirm Part Placements” \n\nContinue to the next step by clicking “Next” \nUpload your BOM and CPL files then click “Proceed BOM & CPL” \nConfirm your parts and Continue to the next step by clicking “Next” \nContinue to the next step by clicking “Next”\n\nNote: It’s Ok that your part are not align well, the there will be engineer from JLCPCB contact you (email) fix the alignment and confirm the PCB design with you \n\nClick “Save to the cart” and ready to order!"
+  },
+  {
+    "objectID": "Page_Ordering/ordering_overview.html",
+    "href": "Page_Ordering/ordering_overview.html",
+    "title": "Ordering Overview",
+    "section": "",
+    "text": "Welcome! Use the links below to navigate to the appropriate ordering instructions:\n\nOrdering Custom Panels\nOrdering Electronics (PCBs)\nOrdering Standard Hardware"
   }
 ]

@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://hrl-labs-clinic-24-25.github.io/website/Page_Ordering/custom_panels/custom_panels.html</loc>
-    <lastmod>2025-04-22T07:34:21.486Z</lastmod>
+    <lastmod>2025-04-29T06:37:47.650Z</lastmod>
   </url>
   <url>
     <loc>https://hrl-labs-clinic-24-25.github.io/website/Page_Ordering/standard_hardware/standard_hardware.html</loc>
-    <lastmod>2025-04-16T03:57:17.681Z</lastmod>
+    <lastmod>2025-04-29T08:41:28.351Z</lastmod>
   </url>
   <url>
     <loc>https://hrl-labs-clinic-24-25.github.io/website/about.html</loc>
@@ -14,23 +14,31 @@
   </url>
   <url>
     <loc>https://hrl-labs-clinic-24-25.github.io/website/Page_Documentation/software_doc/software_doc.html</loc>
-    <lastmod>2025-04-16T03:57:17.681Z</lastmod>
+    <lastmod>2025-04-29T05:17:20.846Z</lastmod>
   </url>
   <url>
     <loc>https://hrl-labs-clinic-24-25.github.io/website/Page_Assembly/assembly_overview.html</loc>
     <lastmod>2025-04-22T03:36:38.047Z</lastmod>
   </url>
   <url>
-    <loc>https://hrl-labs-clinic-24-25.github.io/website/Page_Software/software_overview.html</loc>
-    <lastmod>2025-04-16T03:57:17.682Z</lastmod>
+    <loc>https://hrl-labs-clinic-24-25.github.io/website/Page_Installation/installation.html</loc>
+    <lastmod>2025-04-29T05:17:20.846Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hrl-labs-clinic-24-25.github.io/website/Page_Advanced/advanced_usage.html</loc>
+    <lastmod>2025-04-29T05:17:20.845Z</lastmod>
   </url>
   <url>
     <loc>https://hrl-labs-clinic-24-25.github.io/website/Page_QuickStart/quickstart.html</loc>
-    <lastmod>2025-04-22T07:34:58.769Z</lastmod>
+    <lastmod>2025-04-29T08:47:51.161Z</lastmod>
   </url>
   <url>
-    <loc>https://hrl-labs-clinic-24-25.github.io/website/Page_Software/example_sw/example_sw.html</loc>
-    <lastmod>2025-04-16T03:57:17.682Z</lastmod>
+    <loc>https://hrl-labs-clinic-24-25.github.io/website/Page_Advanced/edit_firmware/edit_firmware.html</loc>
+    <lastmod>2025-04-29T05:17:20.846Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hrl-labs-clinic-24-25.github.io/website/Page_Installation/example_sw/example_sw.html</loc>
+    <lastmod>2025-04-29T05:17:20.846Z</lastmod>
   </url>
   <url>
     <loc>https://hrl-labs-clinic-24-25.github.io/website/Page_Resources/resources.html</loc>
@@ -38,7 +46,7 @@
   </url>
   <url>
     <loc>https://hrl-labs-clinic-24-25.github.io/website/index.html</loc>
-    <lastmod>2025-04-16T03:57:17.683Z</lastmod>
+    <lastmod>2025-04-29T05:17:20.849Z</lastmod>
   </url>
   <url>
     <loc>https://hrl-labs-clinic-24-25.github.io/website/Page_Documentation/hardware_doc/hardware_doc.html</loc>
@@ -46,10 +54,10 @@
   </url>
   <url>
     <loc>https://hrl-labs-clinic-24-25.github.io/website/Page_Ordering/electronics/electronics.html</loc>
-    <lastmod>2025-04-16T03:57:17.681Z</lastmod>
+    <lastmod>2025-04-29T10:25:11.551Z</lastmod>
   </url>
   <url>
     <loc>https://hrl-labs-clinic-24-25.github.io/website/Page_Ordering/ordering_overview.html</loc>
-    <lastmod>2025-04-16T03:57:17.681Z</lastmod>
+    <lastmod>2025-04-29T06:24:38.522Z</lastmod>
   </url>
 </urlset>

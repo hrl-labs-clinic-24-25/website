@@ -6,25 +6,15 @@ website:
   navbar:
     left:
       - href: Page_QuickStart/quickstart.qmd
-        text: Quick Start
-      - text: Ordering
+        text: Quack Start
+      - text: Detailed Instructions
         menu:
-        - text: Overview
+        - text: Ordering
           href: Page_Ordering/ordering_overview.qmd
-        - text: Electronics
-          href: Page_Ordering/electronics/electronics.qmd
-        - text: Custom Panels
-          href: Page_Ordering/custom_panels/custom_panels.qmd
-        - text: Standard Hardware
-          href: Page_Ordering/standard_hardware/standard_hardware.qmd
-      - text: Assembly
-        href: Page_Assembly/assembly_overview.qmd
-      - text: Software
-        menu:
-        - text: Overview
-          href: Page_Software/software_overview.qmd
-        - text: Example SW?
-          href: Page_Software/example_sw/example_sw.qmd
+        - text: Assembly
+          href: Page_Assembly/assembly_overview.qmd
+        - text: Installation
+          href: Page_Installation/installation.qmd
       - text: Documentation
         menu:
         - text: Hardware

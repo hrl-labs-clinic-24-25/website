@@ -1,0 +1,18 @@
+---
+title: Software Installation
+---
+
+::: {.callout-warning}
+## Before You Start...
+
+This page assumes that you already have a working installation of `qick`. If you don't, please follow qick's [quick start guide](https://qick-docs.readthedocs.io/latest/quick_start.html) before continuing here.
+:::
+
+
+## Clone the qickquack repository
+
+## Move to RFSoC
+
+## Install qickquack locally
+
+## Run test notebook

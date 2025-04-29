@@ -22,13 +22,13 @@ You will need the following items to correctly summon the QuACK. For more inform
 ## Hardware
 Here's the list of hardware you will need to assemble a QuACK system. For more information on each step, see the Detailed Instructions tab above.
 
-- [ ] (1) 19'' Rack Box Enclosure: 
-- [ ] (1) Custom Front Panel: 
-- [ ] (1) Custom Support Panel: 
-- [ ] (1-4) Custom Output PCB Board: 
-- [ ] (1-4) Custom Input PCB Board: 
-- [ ] (1) Custom Coupling PCB Board:
-- [ ] 
+- [ ] (1) [19'' Rack Box Enclosure](./standard_hardware/standard_hardware.qmd) 
+- [ ] (1) [Custom Front Panel](./custom_panels/custom_panels.qmd)
+- [ ] (1) [Custom Support Panel](./custom_panels/custom_panels.qmd)
+- [ ] (1-4) [Custom Output PCB Board](./electronics/electronics.qmd)
+- [ ] (1-4) [Custom Input PCB Board](./electronics/electronics.qmd)
+- [ ] (1) [Custom Coupling PCB Board](./electronics/electronics.qmd)
+- [ ] [List of the supporting standard hardware](./standard_hardware/standard_hardware.qmd)
 
 ## Software
 QuACK expands on both the firmware and software aspects of QICK. 

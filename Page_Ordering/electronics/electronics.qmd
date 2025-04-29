@@ -1,3 +1,65 @@
 ---
 title: Electronics
 ---
+
+## Overview
+
+In this project, we designed three custom PCB:
+
+- A **input board**
+- A **output board**
+- A **coupling board**
+
+All of our custom PCB were ordered through [JLCPCB](https://jlcpcb.com/)
+
+## PCB Fabrication Files
+
+Here are the links to our PCB fabrication files:
+
+- [Input Board](https://github.com/hrl-labs-clinic-24-25/hardware-fabrication/tree/main/Input_Board)
+- [Output Board](https://github.com/hrl-labs-clinic-24-25/hardware-fabrication/tree/main/output_board)
+- [Coupling Board](https://github.com/hrl-labs-clinic-24-25/hardware-fabrication/tree/main/coupling_board)
+
+Each link contains three neccessary files for ordering the PCB:
+
+- **Gerber Files**: These files contain the information needed to manufacture the PCB, including the copper layers, solder mask, and silkscreen.
+- **BOM (Bill of Materials)**: This file lists all the components required for the PCB, including their specifications and quantities.
+- **CPL (Centroid File)**: This file provides the coordinates of each component on the PCB, which is essential for automated assembly processes.
+
+## PCB Ordering Instructions throgh JLCPCB
+1. Go to [JLCPCB](https://jlcpcb.com/) and create an account if you don't have one. *Note: you ust have an account to place an order.*
+2. Sign in to your account
+![PCB Ordering](images/pcb_ordering_instruction_1.png)
+
+3. Upload your Gerger files as indicate in the image below. 
+![](images/pcb_ordering_instruction_2.png)
+
+4. Then it will show the options for selecting the PCB specifications, such as size, quantity, and color. We recommended using the these following options:
+   - Choose Plugged for Via Covering
+   ![](images/pcb_ordering_instruction_3.png)
+
+   - Choose "Standard" PCB. 
+
+   *Note: if you have a two layer PCB, you **have** to choose "Standard" and assemble "Both Sides"*
+   ![](images/pcb_ordering_instruction_4.png)
+
+   - Choose "Confirm Part Placements"
+   ![](images/pcb_ordering_instruction_5.png)
+
+5. Continue to the next step by clicking "Next"
+![](images/pcb_ordering_instruction_6.png)
+
+6. Upload your BOM and CPL files then click "Proceed BOM & CPL"
+![](images/pcb_ordering_instruction_7.png)
+
+7. Confirm your parts and Continue to the next step by clicking "Next"
+![](images/pcb_ordering_instruction_8.png)
+
+8.  Continue to the next step by clicking "Next"
+
+*Note: It's Ok that your part are not align well, the there will be engineer from JLCPCB contact you (email) fix the alignment and confirm the PCB design with you*
+![](images/pcb_ordering_instruction_9.png)
+
+9. Click "Save to the cart" and ready to order!
+![](images/pcb_ordering_instruction_10.png)
+

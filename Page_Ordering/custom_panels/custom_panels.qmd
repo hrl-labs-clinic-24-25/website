@@ -36,8 +36,16 @@ Both panels were ordered through [Front Panel Express](https://www.frontpanelexp
 ![Panel Design Instructions 6](images/front_design_instruction_6.png)
 
 ## Our Custom Panels for the Project {#sec-custom-panels}
-- **Front Panel**: The front panel was designed to fit the original Rack Box front panel, with cutouts for the SMA connectors and mounting holes for the output board and the panel itself. The material we used for this panel is anodize aluminum because ..... However .... [TODO]
 
-// TODO: Add image of the front panel design, and the file link to the design file
+1. Download the design files for the front panel and support panel from the links below:
 
-- **Support Panel**: The support panel was designed to provide mechanical stability to the coupling board. It has 4 M3 mounting holes for the coupling board. 
+   - [Front Panel Design File](https://github.com/hrl-labs-clinic-24-25/hardware-fabrication/tree/main/front_panel)
+   - [Support Panel Design File](https://github.com/hrl-labs-clinic-24-25/hardware-fabrication/tree/main/support_panel)
+
+
+2. Open the Front Panel Express software and go to File → Import to open the downloaded design files.
+![Front Panel Instructions](images/front_panel_instruction_7.png)
+3. Review the design files to ensure they meet your requirements. You can make any necessary adjustments using the Front Panel Express software.
+4. Once you are satisfied with the design, go to Order → Order Panel. This will direct you to the Front Panel Express ordering site to place your order(same as in step 5 above). You can choose to order the panel as is or download the design file for future use.
+
+More detailed documentation of each panel design can be found in ______ (TODO: add link to detailed documentation).

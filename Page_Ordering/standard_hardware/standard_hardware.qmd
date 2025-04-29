@@ -1,3 +1,98 @@
 ---
 title: Standard Hardware
 ---
+
+## Overview
+
+In this project, we purchase some standard hardware components to assemble the QuACK system. We will provide links to the components we used, along with brief descriptions of their purpose.
+
+## Order Check List
+- [ ] (1) [19'' Rack Box Enclosure](https://www.newark.com/bud-industries/nhc-14156/cabinet-rack-mount-4-5in-aluminum/dp/06M4739?CMP=AFC-ECIA)
+- [ ] (32) [CN-0531 DAC Boards](https://www.digikey.com/en/products/detail/analog-devices-inc/EVAL-CN0531-PMDZ/13986379)
+- [ ] (4) [Pin Jumper (2-pos, 0.100" pitch)](https://www.digikey.com/en/products/detail/keystone-electronics/24348/1532917)
+- [ ] (27) [PCB Standoffs](https://www.digikey.com/en/products/detail/keystone-electronics/24348/1532917)
+- [ ] (19) [Steel M3 Nuts](https://www.digikey.com/en/products/detail/keystone-electronics/4708/4499301)
+- [ ] (7) [Short Screw](https://www.digikey.com/en/products/detail/keystone-electronics/29311/1532208)
+- [ ] (12) [Long Screw](https://www.digikey.com/en/products/detail/keystone-electronics/29316/1532210?s=N4IgTCBcDa4JwGYCMA2EBdAvkA)
+- [ ] (12) [5.3mm Nylon M3 Spacer](https://www.digikey.com/en/products/detail/essentra-components/MNI-4-10/241638)
+- [ ] (12) [3.3mm Nylon M3 Spacer](https://www.digikey.com/en/products/detail/essentra-components/MNI-4-5/241635?s=N4IgTCBcDaILIDkCSBaALCgrCAugXyA)
+- [ ] (32) [JST PH 2-Pin Female 4" cable](https://www.digikey.com/en/products/detail/adafruit-industries-llc/261/5353586)
+- [ ] (1)[Microfit Power Cable](https://www.digikey.com/en/products/detail/molex/2147502022/12373741)
+- [ ] (8) [Ribbon Cable Connector (2x12 Female)](https://www.digikey.com/en/products/detail/te-connectivity-amp-connectors/1658622-5/825415)
+- [ ] [Ribbon Cable (1.27mm, 28AWG, 24cond)](https://www.digikey.com/en/products/detail/3m/3365-24-300SF/21630383)
+- [ ] (1)[male to male 25pin DSUB cable](https://www.l-com.com/d-sub-economy-molded-d-sub-cable-db25-male-male-50-ft)
+
+## Order Details
+- **19'' Rack Box Enclosure**:
+    - **Purpose**: This enclosure serves as the main housing for the QuACK system, providing protection and organization for the internal components.
+    - **Link**: [3U Rack Box Enclosure](https://www.newark.com/bud-industries/nhc-14156/cabinet-rack-mount-4-5in-aluminum/dp/06M4739?CMP=AFC-ECIA)
+    - **Datasheet**: [Rack Box Enclosure Datasheet](https://www.farnell.com/datasheets/1808028.pdf)
+    ![Rack Box Enclosure Picture](images/Rack_Box_Enclosure.png)
+
+- **CN-0531 DAC Boards**:
+    - **Purpose**: These boards are used for digital-to-analog conversion, allowing the QuACK system to output analog signals.
+    - **Link**: [DAC board](https://www.digikey.com/en/products/detail/analog-devices-inc/EVAL-CN0531-PMDZ/13986379) 
+    - **Datasheet**: [CN-0531 DAC Board Datasheet](https://www.analog.com/media/en/reference-design-documentation/reference-designs/cn0531.pdf)
+    ![DAC Board](images/dac_board.jpg)
+
+- **Pin Jumper (2-pos, 0.100" pitch)**: 
+    - **Purpose**: These jumpers are used to connect the DAC boards to the QuACK system, allowing for communication and control.
+    - **Link**: [Pin Jumper](https://www.digikey.com/en/products/detail/sullins-connector-solutions/STC02SYAN/76372)
+    - **Datasheet**: [Pin Jumper Datasheet](https://drawings-pdf.s3.amazonaws.com/11134.pdf)
+    ![Pin Jumper](images/pin_jumper.jpg)
+- **PCB Standoffs**:
+    - **Purpose**: These standoffs are used to secure the input board into a stacked configuration within the QuACK system, providing mechanical stability and separation between components.
+    - **Link**: [PCB Standoffs](https://www.digikey.com/en/products/detail/keystone-electronics/24348/1532917)
+    - **Datasheet**: [PCB Standoff Datasheet](https://www.keyelco.com/userAssets/file/M65p76.pdf)
+    ![PCB Standoffs](images/pcb_standoffs.jpg)
+- **Steel M3 Nuts**:    
+    - **Purpose**: These nuts are used in conjunction with the PCB standoffs to secure the input/output/coupling board and other components within the QuACK system.
+    - **Link**: [Steel M3 Nuts](https://www.digikey.com/en/products/detail/keystone-electronics/4708/4499301)
+    - **Datasheet**: [Steel M3 Nuts Datasheet](https://www.keyelco.com/userAssets/file/M65p135.pdf) 
+    ![Steel M3 Nuts](images/nuts_m3.jpg)
+- **Short Screw**:
+    - **Purpose**: These screws are used to secure various components within the QuACK system, including the input and output boards.
+    - **Link**: [Short Screw](https://www.digikey.com/en/products/detail/keystone-electronics/29311/1532208)
+    - **Datasheet**: [Short Screw Datasheet](https://www.keyelco.com/userAssets/file/M65p135.pdf)
+    ![Short Screw](images/short_screw.jpg)
+- **Long Screw**:
+    - **Purpose**: These screws are used to secure the input and output boards within the QuACK system, providing stability and mechanical support.
+    - **Link**: [Long Screw](https://www.digikey.com/en/products/detail/keystone-electronics/29316/1532210?s=N4IgTCBcDa4JwGYCMA2EBdAvkA)
+    - **Datasheet**: [Long Screw Datasheet](https://www.keyelco.com/userAssets/file/M65p121.pdf)
+    ![Long Screw](images/long_screw.jpeg)
+- **5.3mm Nylon M3 Spacer**:
+    - **Purpose**: These spacers are used to create a gap between the input/output boards.
+    - **Link**: [5.3mm Nylon M3 Spacer](https://www.digikey.com/en/products/detail/essentra-components/MNI-4-10/241638)
+    - **Datasheet**: [5.3mm Nylon M3 Spacer Datasheet](https://media.digikey.com/pdf/Data%20Sheets/Richco%20Inc%20PDFs/MNI%20Series.pdf)
+    ![5.3mm Nylon M3 Spacer](images/5.3mm_spacer.jpeg)
+- **3.3mm Nylon M3 Spacer**:        
+    - **Purpose**: These spacers are used to create a gap between the input/output boards.
+    - **Link**: [3.3mm Nylon M3 Spacer](https://www.digikey.com/en/products/detail/essentra-components/MNI-4-5/241635?s=N4IgTCBcDaILIDkCSBaALCgrCAugXyA)
+    - **Datasheet**: [3.3mm Nylon M3 Spacer Datasheet](https://media.digikey.com/pdf/Data%20Sheets/Richco%20Inc%20PDFs/MNI%20Series.pdf)
+    ![3.3mm Nylon M3 Spacer](images/3.3mm_spacer.jpeg)
+- **JST PH 2-Pin Female 4'' cable**:
+    - **Purpose**: These cables are used to connect the DAC boards to the QuACK system, allowing for communication and control.
+    - **Link**: [JST PH 2-Pin Female 4" cable](https://www.digikey.com/en/products/detail/adafruit-industries-llc/261/5353586)      
+    - **Datasheet**: [JST PH 2-Pin Female 4" cable Datasheet](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/811/261_Web.pdf)
+    ![JST PH Cable](images/jst_ph_cable.jpg)
+- **Microfit Power Cable**:
+    - **Purpose**: This cable is used to provide power to the QuACK system
+    - **Link**: [Microfit Power Cable](https://www.digikey.com/en/products/detail/molex/2147502022/12373741)
+    - **Datasheet**: [Microfit Power Cable Datasheet](https://www.molex.com/en-us/products/part-detail/2147502022?display=pdf)
+    ![Microfit Power Cable](images/microfit_power_cable.jpg)
+- **Ribbon Cable Connector**
+    - **Purpose**: These connectors are used to connect the ribbon cable to the QuACK system, allowing for communication and control between components.
+    - **Link**: [Ribbon Cable Connector (2x12 female)](https://www.digikey.com/en/products/detail/te-connectivity-amp-connectors/1658622-5/825415)
+    - **Datasheet**: [Ribbon Cable Connector Datasheet](https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=114-40005&DocType=SS&DocLang=EN)
+    ![Ribon Cable Connectors](images/ribbon_cable_connector.jpg)
+- **Ribbon Cable (1.27mm, 28AWG, 24cond)**:
+    - **Purpose**: This ribbon cable is used to connect the QuACK system to various components, allowing for communication and control.
+    - **Link**: [Ribbon Cable (1.27mm, 28AWG, 24cond)](https://www.digikey.com/en/products/detail/3m/3365-24-300SF/21630383)
+    - **Datasheet**: [Ribbon Cable Datasheet](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/5587/13751-ESD_TS-0080.indd.pdf)
+    ![Ribbon Cable](images/ribbon_cable.jpg)
+- **Male to male 25pin DSUB cable**:
+    - **Purpose**: This cable is used to connect the QuACK system to the FPGA through the coupling board, allowing for communication and control.
+    - **Link**: [Female to Female 25pin DSUB cable](https://www.l-com.com/d-sub-economy-molded-d-sub-cable-db25-male-male-50-ft)
+    ![Male to Male DSUB](images/dsub_cable.jpg)
+    
+

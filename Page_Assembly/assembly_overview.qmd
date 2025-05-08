@@ -1,3 +1,48 @@
 ---
 title: Assembly
 ---
+
+This page will walk a user through the process of assembling their own QUACK box. First, they should have acquired all materials needed to assemble the unit. See the Quack Start page for more information.
+
+# Preparation
+
+Before assembly begins, there is some preparation that should be done on the ordered parts broke into the three sections below:
+
+### Ribbon Cables
+
+
+
+### Enclosure Back Panel
+
+
+
+### Electronics Defect Testing
+
+Our experience with JLCPCB has shown that manufacturing defects can sometimes occur. Before assembly, we recommend testing the following elements of the electronics:
+
+- [ ] Test each individual board with an ohmmeter between the red power terminals and the black ground terminals. They should exhibit resistance of greater than 10 kOhms minimum—in our testing, it was greater than 1 MOhm. Any less than this may indicate a short between the power and ground terminals, and the board should not receive power.
+- [ ] Follow the Input Rack assembly instructions below to connect up the ribbon cables and lead/follow selectors. Repeat the ohmmeter power test described above.
+- [ ] To this functionally assembled input board rack (even if not screwed together), connect up all of the power cables to the input coupling board. Testing the Molex 6-pin power connector, repeat the ohmmeter power test. 
+- [ ] Ensure that the pins of your power supply match the expected inputs of the Molex 6-pin power connector. This pin-out should be described on the back panel board, for clarity.
+
+These tests do not guarantee functionality, but they should at least ensure that nothing shorts, melts, or blows up due to being plugged in.
+
+### V-Cut Snapping
+
+The Output and Coupling boards come as panels. In order to separate these panels, we have put "V-Cuts" along the lines where we want to separate the unused portions from the final use portions. V-Cuts are weak points which are intended to be cleanly snapped in two. 
+
+Using your hands or a pair of pliers, carefully snap the V-Cut lines of the output board until they appear as shown below (note that they are pictured in a full assembly, focus on the shape of the 4 boards):
+
+![](images/outputs_assembled.jpeg)
+
+Similarly, the coupling board comes in a panel, but with two portions intended for use. The left portion is intended to be mounted to the custom support panel on the back of the enclosure. The right portion is a helpful adapter, allowing someone to use a D-Sub 25 connector to hook straight up to the FPGA's GPIO.
+
+![](images/coupling_unseparated.jpeg)
+
+![](images/coupling_separated.jpeg)
+
+# Final Assembly
+
+With everything in hand, your total set of materials should look something like this:
+
+::: {#fig-exploded}

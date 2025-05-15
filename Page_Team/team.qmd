@@ -1,0 +1,207 @@
+---
+title: Meet the QUACK Team
+format:
+  html:
+    toc: true
+    toc-location: left
+    number-sections: false
+---
+
+The QUACK box is the product of a group of students from Harvey Mudd College, working within what's called a "Clinic" team — clinic is like a capstone experience for Harvey Mudd engineers. 
+
+## First, Some Acknowledgements
+
+HRL Laboratories sponsored our clinic experience, with the quantum researchers Andrew Oriani, Paul Jerger, and Abbie Wessels overseeing our project from start to finish. These three expert liaisons gave us valuable insight into their laboratory work, guided the direction of our work, offered earnest and thoughtful feedback, and generally helped us develop a successful product. The student team extends our most sincere gratitude to HRL's experts for providing us with this opportunity!
+
+Additionally, Harvey Mudd pairs the student team with an advisor from the college. Professor Joshua Brake served as our team's advisor, acting as a wealth of knowledge on electrical engineering and team dynamics. His guidance and probing technical questions were essential to the successful execution of our project, and we thank him greatly for his help! 
+
+Finally, our team would like to thank the others who helped us along the way. Thank you to Sho Uemura, who's expert guidance through the QICK firmware and Vivado software helped our team over several hurdles. Thank you also to the staff and faculty in Harvey Mudd's engineering department, who helped keep our clinic experience afloat with equipment and administrative services.
+
+We hope you enjoy the QUACK box, and its many quirks. It is a first-ever prototype, after all. QUACK!
+
+## The Student Team
+
+```{=html}
+<style>
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* ensures everything inside team-member is horizontally centered */
+  text-align: center;
+  max-width: 300px;
+}
+
+.headshot img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.anchorjs-link {
+  display: none !important;
+}
+
+.bio {
+  width: 100%;  /* explicitly occupy full width to prevent alignment issues */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* explicitly aligns h3 and other content */
+}
+
+.bio h3 {
+  text-align: center;
+  margin: 10px 0;
+  width: 100%; /* ensures no unintended constraints affect alignment */
+}
+
+
+.social-links a {
+  margin: 5px;
+  text-decoration: none;
+  color: #007acc;
+  font-weight: bold;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+</style>
+<div class="team-container">
+
+  <!-- TEAM_MEMBER_FIRST_LAST, Member NUMBER -->
+  <div class="team-member">
+    <div class="headshot">
+      <img src="images/DEFAULT_PROFILE_PICTURE.png" alt="TEAM_MEMBER_NAME Profile Picture">
+    </div>
+    <div class="bio">
+      <h3>TEAM_MEMBER_FIRST_LAST</h3>
+      <div class="social-links">
+        <a href="INSERT_URL_HERE_FOR_LINKEDIN">LinkedIn</a>
+        <a href="INSERT_URL_HERE_FOR_GITHUB">GitHub</a>
+      </div>
+      <p>Example text for an example team member, this text serves as an example for the team member who is shown above. This team member is a great example of the kind of team member who is a member of the team.</p>
+    </div>
+  </div>
+
+  <!-- TEAM_MEMBER_FIRST_LAST, Member NUMBER -->
+  <div class="team-member">
+    <div class="headshot">
+      <img src="images/DEFAULT_PROFILE_PICTURE.png" alt="TEAM_MEMBER_NAME Profile Picture">
+    </div>
+    <div class="bio">
+      <h3>TEAM_MEMBER_FIRST_LAST</h3>
+      <div class="social-links">
+        <a href="INSERT_URL_HERE_FOR_LINKEDIN">LinkedIn</a>
+        <a href="INSERT_URL_HERE_FOR_GITHUB">GitHub</a>
+      </div>
+      <p>Example text for an example team member, this text serves as an example for the team member who is shown above. This team member is a great example of the kind of team member who is a member of the team.</p>
+    </div>
+  </div>
+
+  <!-- Jackson Philion, Member 1 -->
+  <div class="team-member">
+    <div class="headshot">
+      <img src="images/jacksonProfile.jpeg" alt="Jackson Philion Headshot">
+    </div>
+    <div class="bio">
+      <h3>Jackson Philion</h3>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/jacksonphilion/">LinkedIn</a>
+        <a href="https://github.com/jacksonphilion/">GitHub</a>
+        <a href="https://jacksonphilion.github.io/hmc-e155-portfolio/">MicroPs Portfolio</a>
+      </div>
+      <p>Jackson enjoyed working as the Hardware team lead for this project, particularly on the input board final design. After graduation in 2025, he'll be pursuing work as a Digital Designer on Masimo's ASIC team.</p>
+    </div>
+  </div>
+
+
+  <!-- TEAM_MEMBER_FIRST_LAST, Member NUMBER -->
+  <div class="team-member">
+    <div class="headshot">
+      <img src="images/DEFAULT_PROFILE_PICTURE.png" alt="TEAM_MEMBER_NAME Profile Picture">
+    </div>
+    <div class="bio">
+      <h3>TEAM_MEMBER_FIRST_LAST</h3>
+      <div class="social-links">
+        <a href="INSERT_URL_HERE_FOR_LINKEDIN">LinkedIn</a>
+        <a href="INSERT_URL_HERE_FOR_GITHUB">GitHub</a>
+      </div>
+      <p>Example text for an example team member, this text serves as an example for the team member who is shown above. This team member is a great example of the kind of team member who is a member of the team.</p>
+    </div>
+  </div>
+
+
+  <!-- TEAM_MEMBER_FIRST_LAST, Member NUMBER -->
+  <div class="team-member">
+    <div class="headshot">
+      <img src="images/DEFAULT_PROFILE_PICTURE.png" alt="TEAM_MEMBER_NAME Profile Picture">
+    </div>
+    <div class="bio">
+      <h3>TEAM_MEMBER_FIRST_LAST</h3>
+      <div class="social-links">
+        <a href="INSERT_URL_HERE_FOR_LINKEDIN">LinkedIn</a>
+        <a href="INSERT_URL_HERE_FOR_GITHUB">GitHub</a>
+      </div>
+      <p>Example text for an example team member, this text serves as an example for the team member who is shown above. This team member is a great example of the kind of team member who is a member of the team.</p>
+    </div>
+  </div>
+
+
+  <!-- TEAM_MEMBER_FIRST_LAST, Member NUMBER -->
+  <div class="team-member">
+    <div class="headshot">
+      <img src="images/DEFAULT_PROFILE_PICTURE.png" alt="TEAM_MEMBER_NAME Profile Picture">
+    </div>
+    <div class="bio">
+      <h3>TEAM_MEMBER_FIRST_LAST</h3>
+      <div class="social-links">
+        <a href="INSERT_URL_HERE_FOR_LINKEDIN">LinkedIn</a>
+        <a href="INSERT_URL_HERE_FOR_GITHUB">GitHub</a>
+      </div>
+      <p>Example text for an example team member, this text serves as an example for the team member who is shown above. This team member is a great example of the kind of team member who is a member of the team.</p>
+    </div>
+  </div>
+
+
+  <!-- TEAM_MEMBER_FIRST_LAST, Member NUMBER -->
+  <div class="team-member">
+    <div class="headshot">
+      <img src="images/DEFAULT_PROFILE_PICTURE.png" alt="TEAM_MEMBER_NAME Profile Picture">
+    </div>
+    <div class="bio">
+      <h3>TEAM_MEMBER_FIRST_LAST</h3>
+      <div class="social-links">
+        <a href="INSERT_URL_HERE_FOR_LINKEDIN">LinkedIn</a>
+        <a href="INSERT_URL_HERE_FOR_GITHUB">GitHub</a>
+      </div>
+      <p>Example text for an example team member, this text serves as an example for the team member who is shown above. This team member is a great example of the kind of team member who is a member of the team.</p>
+    </div>
+  </div>
+
+
+  <!-- TEAM_MEMBER_FIRST_LAST, Member NUMBER -->
+  <div class="team-member">
+    <div class="headshot">
+      <img src="images/DEFAULT_PROFILE_PICTURE.png" alt="TEAM_MEMBER_NAME Profile Picture">
+    </div>
+    <div class="bio">
+      <h3>TEAM_MEMBER_FIRST_LAST</h3>
+      <div class="social-links">
+        <a href="INSERT_URL_HERE_FOR_LINKEDIN">LinkedIn</a>
+        <a href="INSERT_URL_HERE_FOR_GITHUB">GitHub</a>
+      </div>
+      <p>Example text for an example team member, this text serves as an example for the team member who is shown above. This team member is a great example of the kind of team member who is a member of the team.</p>
+    </div>
+  </div>
+
+</div>
+```

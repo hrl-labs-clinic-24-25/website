@@ -23,6 +23,8 @@ website:
           href: Page_Documentation/software_doc/software_doc.qmd
       - text: Other Resources
         href: Page_Resources/resources.qmd
+      - text: QUACK Team
+        href: Page_Team/team.qmd
 
 
 format:

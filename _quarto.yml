@@ -21,8 +21,6 @@ website:
           href: Page_Documentation/hardware_doc/hardware_doc.qmd
         - text: Software
           href: Page_Documentation/software_doc/software_doc.qmd
-      - text: Other Resources
-        href: Page_Resources/resources.qmd
       - text: QUACK Team
         href: Page_Team/team.qmd
 

@@ -6,36 +6,14 @@ title: Custom Panels
 
 In this project, we designed two custom panels:
 
-- A **front panel** to replace the original Rack Box front panel, with cutouts for the SMA connectors from the output board.
-- A **support panel** to provide mechanical stability.
+- A **front panel** to replace the enclosure's stock front panel, including cutouts and labels for the SMA connector outputs.
+- A **support panel** to attach to the enclosure's stock back panel, providing a pass-through for power and data inputs.
 
 Both panels were ordered through [Front Panel Express](https://www.frontpanelexpress.com/).
 
-## Panel Ordering Instructions
+In order to order the front panel, **any user will first need to download** the [Front Panel Designer](https://www.frontpanelexpress.com/front-panel-designer/download) software. Note that we used version 6.4.1.
 
-1. Go to [Front Panel Design](https://www.frontpanelexpress.com/front-panel-designer/download) website to download the latest software (we used version 6.4.1)
-
-2. Open the FrontDesign software and go to File → New to create a new panel file. Then, follow the instructions in the image below to customize your panel design.
-![Panel Design Instructions 1](images/front_design_instruction_1.png)
-
-*Notes: Material of your choice [To Do: explain different material choice]
-
-3. On the top toolbar, you can choose to drill a hole, add a cutout, or insert a text label. The images below demonstrate how to add a hole and a label.
-
-![Panel Design Instructions 2](images/front_design_instruction_2.png)
-![Panel Design Instructions 3](images/front_design_instruction_3.png)
-![Panel Design Instructions 4](images/front_design_instruction_4.png)
-
-4. Use the measure tool to check the dimensions/position of the holes and cutouts. The images below show how to use the measure tool
-
-![Panel Design Instructions 5](images/front_design_instruction_5.png)
-
-*Note: I recommend measuring at specific points such as Edges (E), Center of Hole (R), or Midpoint (M) — these indicators will appear when you hover over them. If no indicator pops up, the measurement may not be exactly at the desired point.*
-
-5. Once you are satisfied with the design, go to Order → Order Panel. This will direct you to the Front Panel Express ordering site to place your order. You can choose to order the panel as is or download the design file for future use.
-![Panel Design Instructions 6](images/front_design_instruction_6.png)
-
-## Our Custom Panels for the Project {#sec-custom-panels}
+## Ordering Our Custom Panels {#sec-custom-panels}
 
 1. Download the design files for the front panel and support panel from the links below:
 
@@ -43,9 +21,32 @@ Both panels were ordered through [Front Panel Express](https://www.frontpanelexp
    - [Support Panel Design File](https://github.com/hrl-labs-clinic-24-25/hardware-fabrication/tree/main/support_panel)
 
 
-2. Open the Front Panel Express software and go to File → Import to open the downloaded design files.
-![Front Panel Instructions](images/front_panel_instruction_7.png)
-3. Review the design files to ensure they meet your requirements. You can make any necessary adjustments using the Front Panel Express software.
-4. Once you are satisfied with the design, go to Order → Order Panel. This will direct you to the Front Panel Express ordering site to place your order(same as in step 5 above). You can choose to order the panel as is or download the design file for future use.
+2. Open the Front Panel Express software and go to File → Import to open the downloaded design files. Do step 2-4 once through for each panel, separately.
 
-More detailed documentation of each panel design can be found in ______ (TODO: add link to detailed documentation).
+![Front Panel Instructions](images/front_panel_instruction_7.png)
+
+3. Review the design files to ensure they meet your requirements. You can make any necessary adjustments using the Front Panel Express software.
+
+4. Once you are satisfied with the design, go to Order → Order Panel. This will direct you to the Front Panel Express ordering site to place your order. You can choose to order the panel as is or download the design file for future use.
+
+## Introduction to Editing Your Own Panels
+
+1. Open the Front Panel Designer software and go to File → New to create a new panel file. Then, follow the instructions in the image below to customize your panel design.
+![Panel Design Instructions 1](images/front_design_instruction_1.png)
+
+*Notes: Material of your choice [To Do: explain different material choice]
+
+2. On the top toolbar, you can choose to drill a hole, add a cutout, or insert a text label. The images below demonstrate how to add a hole and a label.
+
+![Panel Design Instructions 2](images/front_design_instruction_2.png)
+![Panel Design Instructions 3](images/front_design_instruction_3.png)
+![Panel Design Instructions 4](images/front_design_instruction_4.png)
+
+3. Use the measure tool to check the dimensions/position of the holes and cutouts. The images below show how to use the measure tool
+
+![Panel Design Instructions 5](images/front_design_instruction_5.png)
+
+*Note: I recommend measuring at specific points such as Edges (E), Center of Hole (R), or Midpoint (M) — these indicators will appear when you hover over them. If no indicator pops up, the measurement may not be exactly at the desired point.*
+
+4. Once you are satisfied with the design, go to Order → Order Panel. This will direct you to the Front Panel Express ordering site to place your order. You can choose to order the panel as is or download the design file for future use.
+![Panel Design Instructions 6](images/front_design_instruction_6.png)

@@ -7,19 +7,19 @@ title: Standard Hardware
 In this project, we purchase some standard hardware components to assemble the QuACK system. We will provide links to the components we used, along with brief descriptions of their purpose.
 
 ## Order Check List
-- [ ] (1) [19'' Rack Box Enclosure](https://www.newark.com/bud-industries/nhc-14156/cabinet-rack-mount-4-5in-aluminum/dp/06M4739?CMP=AFC-ECIA)
+- [ ] (1) [19" Rack Box Enclosure](https://www.newark.com/bud-industries/nhc-14156/cabinet-rack-mount-4-5in-aluminum/dp/06M4739?CMP=AFC-ECIA)
 - [ ] (32) [CN-0531 DAC Boards](https://www.digikey.com/en/products/detail/analog-devices-inc/EVAL-CN0531-PMDZ/13986379)
 - [ ] (4) [Pin Jumper (2-pos, 0.100" pitch)](https://www.digikey.com/en/products/detail/keystone-electronics/24348/1532917)
 - [ ] (27) [PCB Standoffs](https://www.digikey.com/en/products/detail/keystone-electronics/24348/1532917)
 - [ ] (19) [Steel M3 Nuts](https://www.digikey.com/en/products/detail/keystone-electronics/4708/4499301)
-- [ ] (7) [Short Screw](https://www.digikey.com/en/products/detail/keystone-electronics/29311/1532208)
-- [ ] (12) [Long Screw](https://www.digikey.com/en/products/detail/keystone-electronics/29316/1532210?s=N4IgTCBcDa4JwGYCMA2EBdAvkA)
-- [ ] (12) [5.3mm Nylon M3 Spacer](https://www.digikey.com/en/products/detail/essentra-components/MNI-4-10/241638)
+- [ ] (7) [Short 6.00mm M3 Screw](https://www.digikey.com/en/products/detail/keystone-electronics/29311/1532208)
+- [ ] (12) [Long 16.00mm M3 Screw](https://www.digikey.com/en/products/detail/keystone-electronics/29316/1532210?s=N4IgTCBcDa4JwGYCMA2EBdAvkA)
+- [ ] (12) [5.2mm Nylon M3 Spacer](https://www.digikey.com/en/products/detail/essentra-components/MNI-4-10/241638)
 - [ ] (12) [3.3mm Nylon M3 Spacer](https://www.digikey.com/en/products/detail/essentra-components/MNI-4-5/241635?s=N4IgTCBcDaILIDkCSBaALCgrCAugXyA)
-- [ ] (32) [JST PH 2-Pin Female 4" cable](https://www.digikey.com/en/products/detail/adafruit-industries-llc/261/5353586)
+- [ ] (32) [Adafruit 261: JST PH 2-Pin Female 4" cable](https://www.digikey.com/en/products/detail/adafruit-industries-llc/261/5353586)
 - [ ] (1)[Microfit Power Cable](https://www.digikey.com/en/products/detail/molex/2147502022/12373741)
 - [ ] (8) [Ribbon Cable Connector (2x12 Female)](https://www.digikey.com/en/products/detail/te-connectivity-amp-connectors/1658622-5/825415)
-- [ ] [Ribbon Cable (1.27mm, 28AWG, 24cond)](https://www.digikey.com/en/products/detail/3m/3365-24-300SF/21630383)
+- [ ] (~3-4 feet) [Ribbon Cable (1.27mm, 28AWG, 24cond)](https://www.digikey.com/en/products/detail/3m/3365-24-300SF/21630383)
 - [ ] (1)[male to male 25pin DSUB cable](https://www.l-com.com/d-sub-economy-molded-d-sub-cable-db25-male-male-50-ft)
 
 ## Order Details

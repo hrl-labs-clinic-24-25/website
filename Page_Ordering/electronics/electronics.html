@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.42">
+<meta name="generator" content="quarto-1.5.56">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -35,10 +35,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-6bd9cfa162949bde0a231f530c97869d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -127,8 +127,8 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../../Page_Resources/resources.html"> 
-<span class="menu-text">Other Resources</span></a>
+    <a class="nav-link" href="../../Page_Team/team.html"> 
+<span class="menu-text">QUACK Team</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -148,7 +148,11 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
   <li><a href="#pcb-fabrication-files" id="toc-pcb-fabrication-files" class="nav-link" data-scroll-target="#pcb-fabrication-files">PCB Fabrication Files</a></li>
-  <li><a href="#pcb-ordering-instructions-throgh-jlcpcb" id="toc-pcb-ordering-instructions-throgh-jlcpcb" class="nav-link" data-scroll-target="#pcb-ordering-instructions-throgh-jlcpcb">PCB Ordering Instructions throgh JLCPCB</a></li>
+  <li><a href="#pcb-ordering-instructions-through-jlcpcb" id="toc-pcb-ordering-instructions-through-jlcpcb" class="nav-link" data-scroll-target="#pcb-ordering-instructions-through-jlcpcb">PCB Ordering Instructions through JLCPCB</a>
+  <ul class="collapse">
+  <li><a href="#video-demo-of-input-board-ordering" id="toc-video-demo-of-input-board-ordering" class="nav-link" data-scroll-target="#video-demo-of-input-board-ordering">Video Demo of Input Board Ordering</a></li>
+  <li><a href="#written-instructions-for-general-ordering" id="toc-written-instructions-for-general-ordering" class="nav-link" data-scroll-target="#written-instructions-for-general-ordering">Written Instructions for General Ordering</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -176,55 +180,114 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>In this project, we designed three custom PCB:</p>
+<p>In order to construct a QUACK box, our team designed three custom PCBs:</p>
 <ul>
-<li>A <strong>input board</strong></li>
-<li>A <strong>output board</strong></li>
+<li>An <strong>input board</strong></li>
+<li>An <strong>output board</strong></li>
 <li>A <strong>coupling board</strong></li>
 </ul>
-<p>All of our custom PCB were ordered through <a href="https://jlcpcb.com/">JLCPCB</a></p>
+<p>All of our custom PCBs were ordered through <a href="https://jlcpcb.com/">JLCPCB</a>, a Chinese-based PCB manufacturing and assembly house.</p>
 </section>
 <section id="pcb-fabrication-files" class="level2">
 <h2 class="anchored" data-anchor-id="pcb-fabrication-files">PCB Fabrication Files</h2>
 <p>Here are the links to our PCB fabrication files:</p>
 <ul>
-<li><a href="https://github.com/hrl-labs-clinic-24-25/hardware-fabrication/tree/main/Input_Board">Input Board</a></li>
+<li><a href="https://github.com/hrl-labs-clinic-24-25/hardware-fabrication/tree/main/input_board">Input Board</a></li>
 <li><a href="https://github.com/hrl-labs-clinic-24-25/hardware-fabrication/tree/main/output_board">Output Board</a></li>
 <li><a href="https://github.com/hrl-labs-clinic-24-25/hardware-fabrication/tree/main/coupling_board">Coupling Board</a></li>
 </ul>
-<p>Each link contains three neccessary files for ordering the PCB:</p>
+<p>Each link contains three files necessary for ordering the boards, including:</p>
 <ul>
-<li><strong>Gerber Files</strong>: These files contain the information needed to manufacture the PCB, including the copper layers, solder mask, and silkscreen.</li>
-<li><strong>BOM (Bill of Materials)</strong>: This file lists all the components required for the PCB, including their specifications and quantities.</li>
-<li><strong>CPL (Centroid File)</strong>: This file provides the coordinates of each component on the PCB, which is essential for automated assembly processes.</li>
+<li><strong>Gerber Files</strong>: These files contain the information needed to manufacture the board itself, holding information like the copper traces, solder mask, drill holes, and silkscreen. It is not necessary to unzip the GERBER files.</li>
+<li><strong>BOM (Bill of Materials)</strong>: This file lists all the components required for PCB assembly, including their part numbers and quantities.</li>
+<li><strong>CPL (Centroid File)</strong>: This file provides the coordinates of each component on the PCB, enabling JLCPCB’s automated assembly processes.</li>
 </ul>
 </section>
-<section id="pcb-ordering-instructions-throgh-jlcpcb" class="level2">
-<h2 class="anchored" data-anchor-id="pcb-ordering-instructions-throgh-jlcpcb">PCB Ordering Instructions throgh JLCPCB</h2>
+<section id="pcb-ordering-instructions-through-jlcpcb" class="level2">
+<h2 class="anchored" data-anchor-id="pcb-ordering-instructions-through-jlcpcb">PCB Ordering Instructions through JLCPCB</h2>
+<section id="video-demo-of-input-board-ordering" class="level3">
+<h3 class="anchored" data-anchor-id="video-demo-of-input-board-ordering">Video Demo of Input Board Ordering</h3>
+<p>For a demonstration of how to Pre-order parts for the input board, and how to start the ordering process, see…</p>
+<p><a href="https://www.loom.com/share/7577e6b91dd44a95b7ff51c1b9988355">Part 1: Pre-ordering and Setup</a>.</p>
+<p>Then, see…</p>
+<p><a href="https://www.loom.com/share/14b14bd7f6fd48b7a0f703d253201b75">Part 2: Finishing Ordering</a></p>
+</section>
+<section id="written-instructions-for-general-ordering" class="level3">
+<h3 class="anchored" data-anchor-id="written-instructions-for-general-ordering">Written Instructions for General Ordering</h3>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Note that for the input board, we recommend making the internal copper layers 1oz instead of 0.5 oz. Otherwise, the rest of the ordering options match the generic process outlined below. Follow the same procedure for each of the three custom PCBs needed for a full QUACK box.</p>
+</div>
+</div>
 <ol type="1">
-<li><p>Go to <a href="https://jlcpcb.com/">JLCPCB</a> and create an account if you don’t have one. <em>Note: you ust have an account to place an order.</em></p></li>
-<li><p>Sign in to your account <img src="images/pcb_ordering_instruction_1.png" class="img-fluid" alt="PCB Ordering"></p></li>
-<li><p>Upload your Gerger files as indicate in the image below. <img src="images/pcb_ordering_instruction_2.png" class="img-fluid"></p></li>
-<li><p>Then it will show the options for selecting the PCB specifications, such as size, quantity, and color. We recommended using the these following options:</p>
+<li>Go to <a href="https://jlcpcb.com/">JLCPCB</a> and create an account or sign in. It is essential that you are logged in any time you want to do anything meaningful with JLCPCB, like ordering or preordering.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/pcb_ordering_instruction_1.png" class="img-fluid figure-img"></p>
+<figcaption>PCB Ordering</figcaption>
+</figure>
+</div>
+<ol start="2" type="1">
+<li><p>Pre-Order Components, as shown in the Part 1 video demo above. Use <a href="https://docs.google.com/spreadsheets/d/1X04TVDwMbK4ZZVPAbtpRkxXiN-O4DJLlp22VUIOASw8/">this Google Spreadsheet</a> to reference the “English” versions of the BOM, which includes Part numbers. Note that you’ll need:</p>
 <ul>
-<li><p>Choose Plugged for Via Covering <img src="images/pcb_ordering_instruction_3.png" class="img-fluid"></p></li>
-<li><p>Choose “Standard” PCB.</p></li>
-</ul>
-<p><em>Note: if you have a two layer PCB, you <strong>have</strong> to choose “Standard” and assemble “Both Sides”</em> <img src="images/pcb_ordering_instruction_4.png" class="img-fluid"></p>
-<ul>
-<li>Choose “Confirm Part Placements” <img src="images/pcb_ordering_instruction_5.png" class="img-fluid"></li>
+<li><p>5x Assembled Input Boards</p></li>
+<li><p>5x Assembled Output Boards</p></li>
+<li><p>2x Assembled Coupling Boards</p></li>
 </ul></li>
-<li><p>Continue to the next step by clicking “Next” <img src="images/pcb_ordering_instruction_6.png" class="img-fluid"></p></li>
-<li><p>Upload your BOM and CPL files then click “Proceed BOM &amp; CPL” <img src="images/pcb_ordering_instruction_7.png" class="img-fluid"></p></li>
-<li><p>Confirm your parts and Continue to the next step by clicking “Next” <img src="images/pcb_ordering_instruction_8.png" class="img-fluid"></p></li>
-<li><p>Continue to the next step by clicking “Next”</p></li>
+<li><p>Upload your Gerger files as indicated in the image below. <img src="images/pcb_ordering_instruction_2.png" class="img-fluid"></p></li>
+<li><p>After processing, the page will show all of the options for ordering the PCB. Most of the defaults are okay, but we recommended using the these following options:</p>
+<ul>
+<li>Choose Plugged for Via Covering.</li>
+</ul>
+<p><img src="images/pcb_ordering_instruction_3.png" class="img-fluid"></p>
+<ul>
+<li>For the Input Board, leave the Economic PCB selected. For the Output and Coupling baords, select “Standard” PCB.</li>
+</ul>
+<p><img src="images/pcb_ordering_instruction_4.png" class="img-fluid"></p>
+<ul>
+<li>Choose “Confirm Part Placement,” and check Do Not Confirm Automatically.</li>
+</ul>
+<p><img src="images/pcb_ordering_instruction_5.png" class="img-fluid"></p></li>
+<li><p>Continue to the next step by clicking “Next”. <img src="images/pcb_ordering_instruction_6.png" class="img-fluid"></p></li>
+<li><p>Upload your BOM and CPL files then click “Proceed BOM &amp; CPL”.</p></li>
 </ol>
-<p><em>Note: It’s Ok that your part are not align well, the there will be engineer from JLCPCB contact you (email) fix the alignment and confirm the PCB design with you</em> <img src="images/pcb_ordering_instruction_9.png" class="img-fluid"></p>
+<p><img src="images/pcb_ordering_instruction_7.png" class="img-fluid"></p>
+<ol start="7" type="1">
+<li>Select any unspecified parts, and confirm the displayed BOM. Make sure you have the quantities of all parts in stock. Continue to the next step by clicking “Next”.</li>
+</ol>
+<p><img src="images/pcb_ordering_instruction_8.png" class="img-fluid"></p>
+<ol start="8" type="1">
+<li>Continue to the next step by clicking “Next”.</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Most likely, the parts on this page will not align properly. This is okay. Per multiple conversations with JLCPCB, their rendering software can struggle to visually align components and it is not a cause for concern. They have an engineer manually align this render after an order is placed. By selecting “Confirm Parts Placement” in step 4 above, we will get a chance to check their work before giving the final order a go.</p>
+</div>
+</div>
+<p><img src="images/pcb_ordering_instruction_9.png" class="img-fluid"></p>
 <ol start="9" type="1">
-<li>Click “Save to the cart” and ready to order! <img src="images/pcb_ordering_instruction_10.png" class="img-fluid"></li>
+<li>Click “Save to the cart” and proceed to checkout! <img src="images/pcb_ordering_instruction_10.png" class="img-fluid"></li>
 </ol>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -310,6 +373,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -420,6 +485,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
+      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {

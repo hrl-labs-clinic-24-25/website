@@ -3,32 +3,49 @@ title: Quack Start
 ---
 
 # TL;DR
-You will need the following items to correctly summon the QuACK. For more information on each step, see the Detailed Instructions tab above.
+You will need the following items to correctly summon the QuACK. For more information on each step, see the Detailed Instructions tab in the navbar.
 
 - [ ] **1 working qick setup** including RFSoC, RFSoC accessories and software
-- [ ] 2 to 32 CN-0531 DAC boards
+- [ ] 2 to 32 CN0531 DAC boards
 - [ ] 1 to 4 QuACK input boards
 - [ ] 1 to 4 QuACK output boards
 - [ ] 1 QuACK coupling board
-- [ ] 1 6V power supply
+- [ ] 1 Custom Front Panel
+- [ ] 1 Custom Support Panel
+- [ ] 1 5-12V power supply (minimum 5A for full 32 DAC system) (output as either Molex-6 Minifit or two Banana Connectors)
 - [ ] 1 qickquack installation
-- [ ] Advanced power tooling
-- [ ] Beginner-friendly screwdriver
+- [ ] Tools for modifying stock enclosure back panel
+- [ ] Flathead and Phillips screwdrivers
+- [ ] Ribbon Cable Crimper, or some ingenuity with pinching flat things
 - [ ] A fair bit of time
 - [ ] Some patience
-- [ ] Stale bread (quantity varies)
+- [ ] Stale bread (quantity varies) (quack)
  
 
 ## Hardware
-Here's the list of hardware you will need to assemble a QuACK system. For more information on each step, see the Detailed Instructions tab above.
 
-- [ ] (1) [19'' Rack Box Enclosure](./standard_hardware/standard_hardware.qmd) 
-- [ ] (1) [Custom Front Panel](./custom_panels/custom_panels.qmd)
-- [ ] (1) [Custom Support Panel](./custom_panels/custom_panels.qmd)
-- [ ] (1-4) [Custom Output PCB Board](./electronics/electronics.qmd)
-- [ ] (1-4) [Custom Input PCB Board](./electronics/electronics.qmd)
-- [ ] (1) [Custom Coupling PCB Board](./electronics/electronics.qmd)
-- [ ] [List of the supporting standard hardware](./standard_hardware/standard_hardware.qmd)
+There are three main places that a user will have to go to order items for the QUACK box.
+
+* JLCPCB – Custom Printed Circuit Board (PCB) Manufacturer and Assembler
+
+    * Input Boards (5)
+    * Output Boards (5)
+    * Coupling Board (2)
+
+* Front Panel Express – Custom Front Panel Manufacturer
+
+    * Custom Front Panel (1)
+    * Custom Support Panel (1)
+
+* Digikey
+
+    * Everything Else (screws, nuts, spacers, cables, stock enclosure, etc.)
+
+To get started on this list, head over to the [Detailed Instructions -> Ordering Overview](/./Page_Ordering/ordering_overview.qmd) page. Work your way through the 3 pages found there.
+
+After all of your items have come in, head over to the First half of the [Detailed Instructions -> Assembly](/./Page_Assembly/assembly_overview.qmd) page to do some basic preparation and testing of components.
+
+Once ready, continue on the same page to assemble the full system. That will be a wrap on hardware setup!
 
 ## Software
 QuACK expands on both the firmware and software aspects of QICK. 

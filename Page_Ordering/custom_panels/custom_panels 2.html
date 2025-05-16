@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Non-Hardware Documentation – QUACK</title>
+<title>Custom Panels – QUACK</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -90,7 +90,7 @@ ul.task-list li input[type="checkbox"] {
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link" href="../../Page_QuickStart/quickstart.html"> 
-<span class="menu-text">QUACK Start</span></a>
+<span class="menu-text">Quack Start</span></a>
   </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-detailed-instructions" role="link" data-bs-toggle="dropdown" aria-expanded="false">
@@ -127,8 +127,8 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../../Page_Team/team.html"> 
-<span class="menu-text">QUACK Team</span></a>
+    <a class="nav-link" href="../../Page_Resources/resources.html"> 
+<span class="menu-text">Other Resources</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -146,8 +146,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#reference-manual" id="toc-reference-manual" class="nav-link active" data-scroll-target="#reference-manual">Reference Manual</a></li>
-  <li><a href="#python-api" id="toc-python-api" class="nav-link" data-scroll-target="#python-api">Python API</a></li>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#sec-custom-panels" id="toc-sec-custom-panels" class="nav-link" data-scroll-target="#sec-custom-panels">Ordering Our Custom Panels</a></li>
+  <li><a href="#introduction-to-editing-your-own-panels" id="toc-introduction-to-editing-your-own-panels" class="nav-link" data-scroll-target="#introduction-to-editing-your-own-panels">Introduction to Editing Your Own Panels</a></li>
   </ul>
 </nav>
     </div>
@@ -156,7 +157,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Non-Hardware Documentation</h1>
+<h1 class="title">Custom Panels</h1>
 </div>
 
 
@@ -173,11 +174,60 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="reference-manual" class="level2">
-<h2 class="anchored" data-anchor-id="reference-manual"><a href="">Reference Manual</a></h2>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>In this project, we designed two custom panels:</p>
+<ul>
+<li>A <strong>front panel</strong> to replace the enclosure’s stock front panel, including cutouts and labels for the SMA connector outputs.</li>
+<li>A <strong>support panel</strong> to attach to the enclosure’s stock back panel, providing a pass-through for power and data inputs.</li>
+</ul>
+<p>Both panels were ordered through <a href="https://www.frontpanelexpress.com/">Front Panel Express</a>.</p>
+<p>In order to order the front panel, <strong>any user will first need to download</strong> the <a href="https://www.frontpanelexpress.com/front-panel-designer/download">Front Panel Designer</a> software. Note that we used version 6.4.1.</p>
 </section>
-<section id="python-api" class="level2">
-<h2 class="anchored" data-anchor-id="python-api"><a href="">Python API</a></h2>
+<section id="sec-custom-panels" class="level2">
+<h2 class="anchored" data-anchor-id="sec-custom-panels">Ordering Our Custom Panels</h2>
+<ol type="1">
+<li><p>Download the design files for the front panel and support panel from the links below:</p>
+<ul>
+<li><a href="https://github.com/hrl-labs-clinic-24-25/hardware-fabrication/tree/main/front_panel">Front Panel Design File</a></li>
+<li><a href="https://github.com/hrl-labs-clinic-24-25/hardware-fabrication/tree/main/support_panel">Support Panel Design File</a></li>
+</ul></li>
+<li><p>Open the Front Panel Express software and go to File → Import to open the downloaded design files. Do step 2-4 once through for each panel, separately.</p></li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/front_panel_instruction_7.png" class="img-fluid figure-img"></p>
+<figcaption>Front Panel Instructions</figcaption>
+</figure>
+</div>
+<ol start="3" type="1">
+<li><p>Review the design files to ensure they meet your requirements. You can make any necessary adjustments using the Front Panel Express software.</p></li>
+<li><p>Once you are satisfied with the design, go to Order → Order Panel. This will direct you to the Front Panel Express ordering site to place your order. You can choose to order the panel as is or download the design file for future use.</p></li>
+</ol>
+</section>
+<section id="introduction-to-editing-your-own-panels" class="level2">
+<h2 class="anchored" data-anchor-id="introduction-to-editing-your-own-panels">Introduction to Editing Your Own Panels</h2>
+<ol type="1">
+<li>Open the Front Panel Designer software and go to File → New to create a new panel file. Then, follow the instructions in the image below to customize your panel design. <img src="images/front_design_instruction_1.png" class="img-fluid" alt="Panel Design Instructions 1"></li>
+</ol>
+<p>*Notes: Material of your choice [To Do: explain different material choice]</p>
+<ol start="2" type="1">
+<li>On the top toolbar, you can choose to drill a hole, add a cutout, or insert a text label. The images below demonstrate how to add a hole and a label.</li>
+</ol>
+<p><img src="images/front_design_instruction_2.png" class="img-fluid" alt="Panel Design Instructions 2"> <img src="images/front_design_instruction_3.png" class="img-fluid" alt="Panel Design Instructions 3"> <img src="images/front_design_instruction_4.png" class="img-fluid" alt="Panel Design Instructions 4"></p>
+<ol start="3" type="1">
+<li>Use the measure tool to check the dimensions/position of the holes and cutouts. The images below show how to use the measure tool</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/front_design_instruction_5.png" class="img-fluid figure-img"></p>
+<figcaption>Panel Design Instructions 5</figcaption>
+</figure>
+</div>
+<p><em>Note: I recommend measuring at specific points such as Edges (E), Center of Hole (R), or Midpoint (M) — these indicators will appear when you hover over them. If no indicator pops up, the measurement may not be exactly at the desired point.</em></p>
+<ol start="4" type="1">
+<li>Once you are satisfied with the design, go to Order → Order Panel. This will direct you to the Front Panel Express ordering site to place your order. You can choose to order the panel as is or download the design file for future use. <img src="images/front_design_instruction_6.png" class="img-fluid" alt="Panel Design Instructions 6"></li>
+</ol>
 
 
 </section>
@@ -275,7 +325,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/hrl-labs-clinic-24-25\.github\.io\/website\/");
+      var filterRegex = new RegExp('/' + window.location.host + '/');
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }

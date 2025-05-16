@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Non-Hardware Documentation – QUACK</title>
+<title>example software page – QUACK</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -90,7 +90,7 @@ ul.task-list li input[type="checkbox"] {
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link" href="../../Page_QuickStart/quickstart.html"> 
-<span class="menu-text">QUACK Start</span></a>
+<span class="menu-text">Quack Start</span></a>
   </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-detailed-instructions" role="link" data-bs-toggle="dropdown" aria-expanded="false">
@@ -127,8 +127,8 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../../Page_Team/team.html"> 
-<span class="menu-text">QUACK Team</span></a>
+    <a class="nav-link" href="../../Page_Resources/resources.html"> 
+<span class="menu-text">Other Resources</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -141,22 +141,15 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#reference-manual" id="toc-reference-manual" class="nav-link active" data-scroll-target="#reference-manual">Reference Manual</a></li>
-  <li><a href="#python-api" id="toc-python-api" class="nav-link" data-scroll-target="#python-api">Python API</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Non-Hardware Documentation</h1>
+<h1 class="title">example software page</h1>
 </div>
 
 
@@ -173,14 +166,8 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="reference-manual" class="level2">
-<h2 class="anchored" data-anchor-id="reference-manual"><a href="">Reference Manual</a></h2>
-</section>
-<section id="python-api" class="level2">
-<h2 class="anchored" data-anchor-id="python-api"><a href="">Python API</a></h2>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -275,7 +262,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/hrl-labs-clinic-24-25\.github\.io\/website\/");
+      var filterRegex = new RegExp('/' + window.location.host + '/');
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }

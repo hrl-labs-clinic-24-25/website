@@ -110,7 +110,7 @@ Lets focus in on the enclosure itself. Set aside the stock front panel—you won
 Enclosure Construction – Exploded
 :::
 
-### Step 1: Front and Sides
+### Step 1.1: Front and Sides
 
 Begin with assembling the front panel to the side panels, using the stainless steel flanges and stock enclosure screws. The instruction manual that came with the enclosure may be helpful here—we follow the same process.
 
@@ -126,7 +126,7 @@ Enclosure Front Flanges
 Enclosure Front and Side Panels
 :::
 
-### Step 2: Bottom
+### Step 1.2: Bottom
 
 ::: {#fig-bottom-unassembled}
 ![](images/bottom_unassembled.jpeg)
@@ -142,7 +142,7 @@ Rest the bottom panel inside the frame that you have built, then attach the two 
 Enclosure Bottom – Only screw in the front screw, on each side.
 :::
 
-### Step 3: Back Panel
+### Step 1.3: Back Panel
 
 First, the Coupling PCB should be attached onto the Support panel. This requires the longer 16.00mm M3 screws, M3 nuts, and the longer 5.20mm nylon spacers (MNI-4-10).
 
@@ -192,7 +192,7 @@ Back Panel – Exploded
 Back Panel – Assembled, Interior
 :::
 
-### Step 4: Output PCB Attachment
+### Step 1.4: Output PCB Attachment
 
 :::  {#fig-outputs-exploded}
 ![](images/outputs_exploded.jpeg)
@@ -216,7 +216,7 @@ Output PCBs – Top View, Spacers Shown
 
 ### Finished Enclosure
 
-Note that after completing steps 1-4 above, the enclosure should be assembled. It is missing the top panel—leave it off while you complete the following steps. Further, make sure that you still have not assembled the two screws that go into the middle of the side panels, into the bottom panel. Here, we have replaced the stock enclosure short screws with 16.00mm long M3 screws and nuts. These will be used to help attach the input board stack-up to the enclosure securely.
+Note that after completing steps 1.1-1.4 above, the enclosure should be assembled. It is missing the top panel—leave it off while you complete the following steps. Further, make sure that you still have not assembled the two screws that go into the middle of the side panels, into the bottom panel. Here, we have replaced the stock enclosure short screws with 16.00mm long M3 screws and nuts. These will be used to help attach the input board stack-up to the enclosure securely.
 
 ::: {#fig-end-enclosure}
 ![](images/end_enclosure.jpeg)
@@ -224,5 +224,213 @@ Note that after completing steps 1-4 above, the enclosure should be assembled. I
 Finished Enclosure
 :::
 
+
 ## Input Board Stack-Up
 
+Turning now to the right half of the full exploded view (@fig-exploded), lets assemble the input board stack. To do so, you'll need 4 input boards with a 2-pin jumper for each. To structurally stack them up, you'll need 6 M3 nuts, 18 M3 PCB standoffs, and 6 M3 short 6.00mm screws.
+
+Note that we have labelled each of the boards we received with a masking tape number. This helps with tracking which boards have been tested, according to the system outlined above in Preparation – Electronics Defect Testing. It also helps to track future errors.
+
+::: {#fig-input-exploded}
+![](images/input_exploded.jpeg)
+
+Input Boards, Structural Stacking Elements, and Jumpers
+:::
+
+Additionally, we have created the following 3D printed support system, designed to center the input board stack within the enclosure, and to keep it from knocking around inside the box. Note that only the rectangular units on the upper left and right are required for this function, but we will show our construction with the full bottom support in place.
+
+::: {#fig-printed-support-exploded}
+![](images/printed_support_exploded.jpeg)
+
+Printed Support – Exploded
+:::
+
+::: {#fig-printed-support-assembled}
+![](images/printed_support_assembled.jpeg)
+
+Printed Support – Assembled
+:::
+
+*Also, have your ribbon cables on hand.*
+
+### Step 2.1: Bottom layer
+
+Assembling the bottom layer takes the most care—the upper layers are more standardized. Begin by securing 4 standoffs in the corners of one of your boards. PCB standoff through the top, nut to secure on the bottom.
+
+::: {#fig-bottom-standoffs}
+![](images/bottom_standoffs)
+
+Bottom Layer – Edge Standoffs
+:::
+
+Place this assembly on top of your 3D printed supports. Make sure that, if you have the full bottom panel, the DAC slots are aligned with the DAC pmod ports on the input board. Attach these 4 standoffs to the corners with a second set of 4 M3 nuts. There should now be 8 nuts screwed on the 4 standoffs.
+
+::: {#fig-back-of-bottom-layer}
+![](images/back_of_bottom_layer.jpeg)
+
+Bottom Layer – Back with only Edge Standoffs
+:::
+
+Next, attach the middle two PCB standoffs and screw these in as well, using two M3 nuts.
+
+::: {#fig-middle-standoffs}
+![](images/middle_standoffs.jpeg)
+
+Bottom Layer – Middle Standoffs Going In
+:::
+
+::: {#fig-middle-standoffs-back}
+![](images/middle_standoffs_back.jpeg)
+
+Bottom Layer – Secure Middle Standoffs
+:::
+
+### Step 2.2: Secure To Enclosure
+
+Place your bottom layer in the enclosure. Use the leftover screws from earlier in the enclosure process, described in the Finished Enclosure section.
+
+::: {#fig-bottom-layer-exploded}
+![](images/bottom_layer_exploded.jpeg)
+
+Bottom Layer in Enclosure – Exploded
+:::
+
+::: {#fig-bottom-layer-assembled}
+![](images/bottom_layer_assembled.jpeg)
+
+Bottom Layer in Enclosure – Assembled
+:::
+
+::: {#fig-bottom-layer-assembled-closeup}
+![](images/bottom_layer_assembled_closeup.jpeg)
+
+Bottom Layer in Enclosure – Close-Up
+:::
+
+### Step 2.3: Designate Leader or Follower
+
+Worth calling out as it's own step—the entire system will not work if the user does not designate each and every board as either a "leader", connecting to the FPGA-In connector, or a "follower", connecting to the Daisychain-In connector. 
+
+By default, neither connection is enabled. The board will only receive a valid input from the mutually exclusive connectors once one of the two pins has been jumped using the 2-pin jumper.
+
+::: {#fig-bottom-layer-jumper}
+![](images/bottom_layer_jumper.jpeg)
+
+Jumper (set to follower on the bottom layer)
+:::
+
+If a user wanted to only use up to 8 DACs, then they would connect this pin to the FPGA-In side and connect the FPGA-In connector up to the coupling board. However, we are assuming here a system of up to 32 DACs, and so we plan to build 3 more layers on top of this bottom layer. Thus, we will designate this board as a "follower", connecting the jumper between the GND center pin and the Daisychain side.
+
+### Step 2.4: Add Second Layer
+
+Using 6 standoffs and another board, add to the stack!
+
+::: {#fig-second-layer}
+![](images/second_layer.jpeg)
+
+Second Layer Added
+:::
+
+Make sure to designate this board as a follower, the same as you did to the bottom layer.
+
+In order to electrically connect the two layers, take one of your 3 Daisychain cables and attach it from the top board's Daisychain Out to the bottom board's Daisychain In, as shown below.
+
+::: {#fig-first-cable}
+![](images/first_cable.jpeg)
+
+First Daisychain Cable, assuming that the bottom layer is the terminating board (end of daisychain).
+:::
+
+### Step 2.5: Repeat for Third Layer
+
+::: {#fig-third-layer}
+![](images/third_layer.jpeg)
+
+Third Layer Added
+:::
+
+::: {#fig-second-cable}
+![](images/second_cable.jpeg)
+
+Second Daisychain Cable, assuming that the bottom layer is the terminating board (end of daisychain).
+:::
+
+### Step 2.6: Add Fourth Layer
+
+This step differs slightly. Instead of using PCB standoffs to secure the top layer, we will instead use the short 6.00mm M3 screws to tighten into the existing standoffs rising from the third layer. 
+
+Also, this layer gets **the designation of leader board, connecting the jumper to the FPGA-In side**.
+
+::: {#fig-fourth-layer}
+![](images/fourth_layer.jpeg)
+
+Final Fourth Layer Added
+:::
+
+Note that the jumpers should look like this, going down the line:
+
+::: {#fig-total-jumpers}
+![](images/total_jumpers.jpeg)
+
+All Jumper Arrangements (bottom 3 red are Daisychain "followers", top is FPGA-In "leader").
+:::
+
+Finally, add in the third and final daisychain connector.
+
+::: {#fig-total-cables}
+![](images/total_cables.jpeg)
+
+All Daisychain Cables Connected.
+:::
+
+::: {#fig-finished-stack}
+![](images/finished_stack.jpeg)
+
+Fully Assembled Input Board Stack.
+:::
+
+### Step 2.7: Add Power and FPGA-In Cable
+
+Taking the last and special FPGA-In ribbon cable, attach it between the leader board on the stack and the coupling board.
+
+::: {#fig-fpga-in-cable}
+![](images/fpga_in_cable.jpeg)
+
+FPGA-In Cable Added
+:::
+
+Next, connect a Molex Microfit 2-pos Power Cable between every individual input board and the coupling board. The coupling board has 4 Microfit connectors for this purpose.
+
+::: {#fig-power-attached}
+![](images/power_cable_attached.jpeg)
+
+Power Cable Attached. Note: Only one is shown.
+:::
+
+## Adding DACs
+
+One may attach any amount of 1-32 DACs into this system. It is recommended that you begin filling the system from the bottom, and build your way up. Each DAC must first be connected with a Adafruit 261: JST 2-Pin Cable Assembly. Connect the red leads to the middle screw terminal port, the Vout. Connect the black lead to the GND left screw terminal port. Shown below.
+
+::: {#fig-DAC-wired}
+![](images/DAC_wired.jpeg)
+
+Wiring of a single DAC
+:::
+
+Some users may prefer to instead twist the cables.
+
+::: {#fig-DAC-twisted}
+![](images/DAC_twisted.jpeg)
+
+Twisted Output Wire
+:::
+
+However you attach it, and whichever pmod header on the Input Board Stack you choose to plug this DAC into, just make sure that you plug the output cable into the output board SMA port which is directly across from that pmod slot. Match the 4x8 grid of pmod headers to the 4x8 grid of output board SMA ports.
+
+::: {#fig-DAC-plugged}
+![](images/DAC_plugged.jpeg)
+
+DAC Plugged In
+:::
+
+With that, you're done! You can slap on the rack mounting flanges that came with the stock enclosure, and attach the top panel. Before you do so, best practice is to test and debug as many signals as you can. We wish you the best of luck with your QUACK box!

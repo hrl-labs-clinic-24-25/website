@@ -1,9 +1,11 @@
----
-title: "QUACK"
----
+
 
 ![Art by Zoe Worrall](images/quack_duck_swirl.png)
 
-This is a Quarto website.
+Welcome to the QUACK box user website! Here, you'll find information on creating and using your own QUACK box.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+What is a QUACK box? It is a modular and scalable voltage control system that's optimized for quantum experimentation. Software and Firmware control is built from and compatible with the open-source QICK system. The qick-quack package allows users to use the QUACK box to natively generate custom calibration PvP plots, and offers full setting and PvP control of up to 32 DAC channels. 
+
+Check out the Quack Start page above to get the fastest start on building your own QUACK box.
+
+Check out the QUACK Team page for more a little more about what this project is, and how it came about!

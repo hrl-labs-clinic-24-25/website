@@ -6,7 +6,7 @@ website:
   navbar:
     left:
       - href: Page_QuickStart/quickstart.qmd
-        text: Quack Start
+        text: QUACK Start
       - text: Detailed Instructions
         menu:
         - text: Ordering

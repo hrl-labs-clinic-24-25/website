@@ -157,18 +157,18 @@ We hope you enjoy the QUACK box, and its many quirks. It is a first-ever prototy
   </div>
 
 
-  <!-- TEAM_MEMBER_FIRST_LAST, Member 6 -->
+  <!-- Jessica Liu, Member 6 -->
   <div class="team-member">
     <div class="headshot">
-      <img src="images/DEFAULT_PROFILE_PICTURE.png" alt="TEAM_MEMBER_NAME Profile Picture">
+      <img src="images/jessica.jpg" alt="TEAM_MEMBER_NAME Profile Picture">
     </div>
     <div class="bio">
-      <h3>TEAM_MEMBER_FIRST_LAST</h3>
+      <h3>Jessica Liu</h3>
       <div class="social-links">
-        <a href="INSERT_URL_HERE_FOR_LINKEDIN">LinkedIn</a>
-        <a href="INSERT_URL_HERE_FOR_GITHUB">GitHub</a>
+        <a href="https://www.linkedin.com/in/jessica-l-16a7a1228">LinkedIn</a>
+        <a href="https://github.com/jesliu-27">GitHub</a>
       </div>
-      <p>Example text for an example team member, this text serves as an example for the team member who is shown above. This team member is a great example of the kind of team member who is a member of the team.</p>
+      <p>Jessica has had so much fun learning new things in the Hardware team of this project, such as designing PCBs, working with hardware, and doing some mechanical design and implementation. She’s heading into her final year at Harvey Mudd College, pursuing a joint degree in Computer Science and Engineering, where she plans to specialize in electrical/hardware/embedded engineering.</p>
     </div>
   </div>
 

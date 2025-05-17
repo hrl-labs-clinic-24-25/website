@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.56">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Assembly – QUACK</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">QUACK</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../Page_QuickStart/quickstart.html"> 
+<span class="menu-text">Quack Start</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-detailed-instructions" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Detailed Instructions</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-detailed-instructions">    
+        <li>
+    <a class="dropdown-item" href="../Page_Ordering/ordering_overview.html">
+ <span class="dropdown-text">Ordering</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../Page_Assembly/assembly_overview.html">
+ <span class="dropdown-text">Assembly</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../Page_Installation/installation.html">
+ <span class="dropdown-text">Installation</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-documentation" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Documentation</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-documentation">    
+        <li>
+    <a class="dropdown-item" href="../Page_Documentation/hardware_doc/hardware_doc.html">
+ <span class="dropdown-text">Hardware</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../Page_Documentation/software_doc/software_doc.html">
+ <span class="dropdown-text">Software</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../Page_Team/team.html"> 
+<span class="menu-text">QUACK Team</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#preparation" id="toc-preparation" class="nav-link active" data-scroll-target="#preparation">Preparation</a>
+  <ul class="collapse">
+  <li><a href="#ribbon-cables" id="toc-ribbon-cables" class="nav-link" data-scroll-target="#ribbon-cables">Ribbon Cables</a>
+  <ul class="collapse">
+  <li><a href="#daisychain-cables" id="toc-daisychain-cables" class="nav-link" data-scroll-target="#daisychain-cables">3 Daisychain Cables</a></li>
+  <li><a href="#fpga-in-cable" id="toc-fpga-in-cable" class="nav-link" data-scroll-target="#fpga-in-cable">1 FPGA-in Cable</a></li>
+  </ul></li>
+  <li><a href="#enclosure-back-panel" id="toc-enclosure-back-panel" class="nav-link" data-scroll-target="#enclosure-back-panel">Enclosure Back Panel</a></li>
+  <li><a href="#electronics-defect-testing" id="toc-electronics-defect-testing" class="nav-link" data-scroll-target="#electronics-defect-testing">Electronics Defect Testing</a></li>
+  <li><a href="#v-cut-snapping" id="toc-v-cut-snapping" class="nav-link" data-scroll-target="#v-cut-snapping">V-Cut Snapping</a></li>
+  <li><a href="#dac-soldering" id="toc-dac-soldering" class="nav-link" data-scroll-target="#dac-soldering">DAC Soldering</a></li>
+  </ul></li>
+  <li><a href="#final-assembly" id="toc-final-assembly" class="nav-link" data-scroll-target="#final-assembly">Final Assembly</a>
+  <ul class="collapse">
+  <li><a href="#enclosure" id="toc-enclosure" class="nav-link" data-scroll-target="#enclosure">Enclosure</a>
+  <ul class="collapse">
+  <li><a href="#step-1.1-front-and-sides" id="toc-step-1.1-front-and-sides" class="nav-link" data-scroll-target="#step-1.1-front-and-sides">Step 1.1: Front and Sides</a></li>
+  <li><a href="#step-1.2-bottom" id="toc-step-1.2-bottom" class="nav-link" data-scroll-target="#step-1.2-bottom">Step 1.2: Bottom</a></li>
+  <li><a href="#step-1.3-back-panel" id="toc-step-1.3-back-panel" class="nav-link" data-scroll-target="#step-1.3-back-panel">Step 1.3: Back Panel</a></li>
+  <li><a href="#step-1.4-output-pcb-attachment" id="toc-step-1.4-output-pcb-attachment" class="nav-link" data-scroll-target="#step-1.4-output-pcb-attachment">Step 1.4: Output PCB Attachment</a></li>
+  <li><a href="#finished-enclosure" id="toc-finished-enclosure" class="nav-link" data-scroll-target="#finished-enclosure">Finished Enclosure</a></li>
+  </ul></li>
+  <li><a href="#input-board-stack-up" id="toc-input-board-stack-up" class="nav-link" data-scroll-target="#input-board-stack-up">Input Board Stack-Up</a>
+  <ul class="collapse">
+  <li><a href="#step-2.1-bottom-layer" id="toc-step-2.1-bottom-layer" class="nav-link" data-scroll-target="#step-2.1-bottom-layer">Step 2.1: Bottom layer</a></li>
+  <li><a href="#step-2.2-secure-to-enclosure" id="toc-step-2.2-secure-to-enclosure" class="nav-link" data-scroll-target="#step-2.2-secure-to-enclosure">Step 2.2: Secure To Enclosure</a></li>
+  <li><a href="#step-2.3-designate-leader-or-follower" id="toc-step-2.3-designate-leader-or-follower" class="nav-link" data-scroll-target="#step-2.3-designate-leader-or-follower">Step 2.3: Designate Leader or Follower</a></li>
+  <li><a href="#step-2.4-add-second-layer" id="toc-step-2.4-add-second-layer" class="nav-link" data-scroll-target="#step-2.4-add-second-layer">Step 2.4: Add Second Layer</a></li>
+  <li><a href="#step-2.5-repeat-for-third-layer" id="toc-step-2.5-repeat-for-third-layer" class="nav-link" data-scroll-target="#step-2.5-repeat-for-third-layer">Step 2.5: Repeat for Third Layer</a></li>
+  <li><a href="#step-2.6-add-fourth-layer" id="toc-step-2.6-add-fourth-layer" class="nav-link" data-scroll-target="#step-2.6-add-fourth-layer">Step 2.6: Add Fourth Layer</a></li>
+  <li><a href="#step-2.7-add-power-and-fpga-in-cable" id="toc-step-2.7-add-power-and-fpga-in-cable" class="nav-link" data-scroll-target="#step-2.7-add-power-and-fpga-in-cable">Step 2.7: Add Power and FPGA-In Cable</a></li>
+  </ul></li>
+  <li><a href="#adding-dacs" id="toc-adding-dacs" class="nav-link" data-scroll-target="#adding-dacs">Adding DACs</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Assembly</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>This page will walk a user through the process of assembling their own QUACK box. First, they should have acquired all materials needed to assemble the unit. See the Quack Start page for more information.</p>
+<section id="preparation" class="level1">
+<h1>Preparation</h1>
+<p>Before assembly begins, some preparatory steps should be taken to get the stock components ready for assembly. should be done on the ordered parts broke into the three sections below:</p>
+<section id="ribbon-cables" class="level2">
+<h2 class="anchored" data-anchor-id="ribbon-cables">Ribbon Cables</h2>
+<p>There are two styles of ribbon cable that must be assembled, and they are worth calling out separately. Please be careful with this step—if not assembled correctly, the system can be shorted.</p>
+<section id="daisychain-cables" class="level3">
+<h3 class="anchored" data-anchor-id="daisychain-cables">3 Daisychain Cables</h3>
+<p>Cut 3 strips of the ribbon cable into 5-7 inch pieces. Then, crimp the connectors to the end <strong>exactly</strong> as shown in the image below, paying careful attention to which side the tab is on.</p>
+<div id="fig-daisychain-ribbon-cables" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-daisychain-ribbon-cables-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/daisychain_ribbon_cables.jpeg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-daisychain-ribbon-cables-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Daisychain Cable Construction
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="fpga-in-cable" class="level3">
+<h3 class="anchored" data-anchor-id="fpga-in-cable">1 FPGA-in Cable</h3>
+<p>The FPGA-In cable is constructed in a fundamentally different way. In our setup, we used a 12-24 inch strip of cable. Pay careful attention to the orientation of the connector and tab.</p>
+<div id="fig-fpga-ribbon-cable" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-fpga-ribbon-cable-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/fpgain_cable.jpeg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fpga-ribbon-cable-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: FPGA-In Cable Construction
+</figcaption>
+</figure>
+</div>
+<p>Using a significantly longer length helps differentiate between the daisychain cables and the FPGA-In cable. It may also be helpful to physically mark them with a Sharpie in some distinctive way.</p>
+</section>
+</section>
+<section id="enclosure-back-panel" class="level2">
+<h2 class="anchored" data-anchor-id="enclosure-back-panel">Enclosure Back Panel</h2>
+<p>In order to attach the <strong>support panel</strong> to the enclosure’s stock back panel, some modifications must be made in the stock panel. Specifically, M3 mounting holes must be drilled, aligning with the <strong>support panel’s</strong> corner holes. This allows the support panel to mount onto the stock back panel, but doesn’t leave any room between the two metal planes for the Coupling PCB to sit. So, using either a hole-saw, laser cutter, water jet, or (in our case) a metal hole punch, clear a Coupling PCB-sized hole into the stock panel.</p>
+<div id="fig-modified-stock-back-panel" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-modified-stock-back-panel-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/modified_stock_back_panel.jpeg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-modified-stock-back-panel-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Our modified stock back panel. <em>Note: the current Support Panel design has been slightly shrunk in the vertical direction, so the corner mounting holes will not extend into the top and bottom flange areas. This change is not pictured above.</em>
+</figcaption>
+</figure>
+</div>
+<p>We found it most effective to use the actual support panel and Coupling PCB, alongside a Sharpie, to mark where the mounting holes should be drilled and the panel should be knocked out. The horizontal alignment of the support panel on the stock back panel doesn’t particularly matter, though somewhere in the middle is best.</p>
+</section>
+<section id="electronics-defect-testing" class="level2">
+<h2 class="anchored" data-anchor-id="electronics-defect-testing">Electronics Defect Testing</h2>
+<p>Our experience with JLCPCB has shown that manufacturing defects can sometimes occur. Before assembly, we recommend testing the following elements of the electronics:</p>
+<ul class="task-list">
+<li><label><input type="checkbox">Test each individual board with an ohmmeter between the red power terminals and the black ground terminals. They should exhibit resistance of greater than 10 kOhms minimum—in our testing, it was greater than 1 MOhm. Any less than this may indicate a short between the power and ground terminals, and the board should not receive power.</label></li>
+<li><label><input type="checkbox">Follow the Input Rack assembly instructions below to connect up the ribbon cables and lead/follow selectors. Repeat the ohmmeter power test described above.</label></li>
+<li><label><input type="checkbox">To this functionally assembled input board rack (even if not screwed together), connect up all of the power cables to the input coupling board. Testing the Molex 6-pin power connector, repeat the ohmmeter power test.</label></li>
+<li><label><input type="checkbox">Ensure that the pins of your power supply match the expected inputs of the Molex 6-pin power connector. This pin-out should be described on the back panel board, for clarity.</label></li>
+</ul>
+<p>These tests do not guarantee functionality, but they should at least ensure that nothing shorts, melts, or blows up due to being plugged in.</p>
+</section>
+<section id="v-cut-snapping" class="level2">
+<h2 class="anchored" data-anchor-id="v-cut-snapping">V-Cut Snapping</h2>
+<p>The Output and Coupling boards come as panels. In order to separate these panels, we have put “V-Cuts” along the lines where we want to separate the unused portions from the final use portions. V-Cuts are weak points which are intended to be cleanly snapped in two.</p>
+<p>Using your hands or a pair of pliers, carefully snap the V-Cut lines of the output board until they appear as shown below (note that they are pictured in a full assembly, focus on the shape of the 4 boards):</p>
+<p><img src="images/outputs_assembled.jpeg" class="img-fluid"></p>
+<p>Similarly, the coupling board comes in a panel, but with two portions intended for use. The left portion is intended to be mounted to the custom support panel on the back of the enclosure. The right portion is a helpful adapter, allowing someone to use a D-Sub 25 connector to hook straight up to the FPGA’s GPIO.</p>
+<p><img src="images/coupling_unseparated.jpeg" class="img-fluid"></p>
+<p><img src="images/coupling_separated.jpeg" class="img-fluid"></p>
+</section>
+<section id="dac-soldering" class="level2">
+<h2 class="anchored" data-anchor-id="dac-soldering">DAC Soldering</h2>
+<p>The CN0531 DACs come ready to use out of the box, but have some optional features that can be enabled. These features can be enabled by soldering a jumper pad on the back of the CN0531 cards. Specifically, our system requires following feature:</p>
+<ul>
+<li>LDAC. Bridge/connect P14.</li>
+</ul>
+<p>This feature allows for the DACs to receive a new data transmission without actually updating the DAC output yet. Thus, multiple DACs can asynchronously receive the data transmissions for their next value, but all update synchronously with a pulse of LDAC.</p>
+<p>Researchers may, however, also make use of the following two features. They are not yet built for native support on the qick-quack package, but are described in brief detail below. See the AD5791 datasheet <a href="https://www.analog.com/media/en/technical-documentation/data-sheets/ad5791.pdf">available here</a> for more information on these signals.</p>
+<ul>
+<li>CLR. Bridge/Connect P15. <strong>Not built</strong> into qick-quack.</li>
+</ul>
+<p>CLR control is not built into the qick-quack package. However, a researcher may find that it comes in handy. The DACs have a CLR register, and pulsing the CLR line will set a DAC’s output to this CLR value. In this way, the entire system can set to a known state without having to manually send all 32 of these clear messages. Sending a custom SPI message in Mode 3 (config mode) could allow a user to experiment with this feature.</p>
+<ul>
+<li>RESET. Bridge/Connect P16. <strong>Not built</strong> into qick-quack.</li>
+</ul>
+<p>RESET control is not built into the qick-quack package, but can be accessed in Mode 3 (config mode). This feature may be similarly useful to researchers. Pulsing this line low resets the entire DAC setup to it’s power-on status. Note that, after use, all DACs will need to be reconfigured.</p>
+</section>
+</section>
+<section id="final-assembly" class="level1">
+<h1>Final Assembly</h1>
+<p>With everything in hand, your total set of materials should look something like this:</p>
+<div id="fig-exploded" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-exploded-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/all_exploded.jpeg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-exploded-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: Entire QuACK Box Assembly – Exploded
+</figcaption>
+</figure>
+</div>
+<section id="enclosure" class="level2">
+<h2 class="anchored" data-anchor-id="enclosure">Enclosure</h2>
+<p>Lets focus in on the enclosure itself. Set aside the stock front panel—you won’t need it—and substitute in the custom front panel.</p>
+<div id="fig-enclosure-exploded" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-enclosure-exploded-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/enclosure_exploded.jpeg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-enclosure-exploded-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5: Enclosure Construction – Exploded
+</figcaption>
+</figure>
+</div>
+<section id="step-1.1-front-and-sides" class="level3">
+<h3 class="anchored" data-anchor-id="step-1.1-front-and-sides">Step 1.1: Front and Sides</h3>
+<p>Begin with assembling the front panel to the side panels, using the stainless steel flanges and stock enclosure screws. The instruction manual that came with the enclosure may be helpful here—we follow the same process.</p>
+<div id="fig-front-flange" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-front-flange-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/front_flange.jpeg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-front-flange-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6: Enclosure Front Flanges
+</figcaption>
+</figure>
+</div>
+<div id="fig-enclosure-first-step" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-enclosure-first-step-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/enclosure_first_step.jpeg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-enclosure-first-step-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7: Enclosure Front and Side Panels
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="step-1.2-bottom" class="level3">
+<h3 class="anchored" data-anchor-id="step-1.2-bottom">Step 1.2: Bottom</h3>
+<div id="fig-bottom-unassembled" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-bottom-unassembled-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/bottom_unassembled.jpeg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bottom-unassembled-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8: Enclosure Bottom Panel
+</figcaption>
+</figure>
+</div>
+<p>Rest the bottom panel inside the frame that you have built, then attach the two screws towards the front. Do not attach the screws in the middle yet. These two screws are the same as are used in the stock enclosure assembly.</p>
+<div id="fig-bottom-screw" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-bottom-screw-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/bottom_screw.jpeg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bottom-screw-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;9: Enclosure Bottom – Only screw in the front screw, on each side.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="step-1.3-back-panel" class="level3">
+<h3 class="anchored" data-anchor-id="step-1.3-back-panel">Step 1.3: Back Panel</h3>
+<p>First, the Coupling PCB should be attached onto the Support panel. This requires the longer 16.00mm M3 screws, M3 nuts, and the longer 5.20mm nylon spacers (MNI-4-10).</p>
+<div id="fig-coupling-to-support" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-coupling-to-support-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/coupling_to_support.jpeg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-coupling-to-support-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10: Coupling PCB and Support Panel – Exploded
+</figcaption>
+</figure>
+</div>
+<div id="fig-coupling-assembled" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-coupling-assembled-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/coupling_assembled.jpeg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-coupling-assembled-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;11: Coupling PCB and Support Panel – Assembled
+</figcaption>
+</figure>
+</div>
+<div id="fig-coupling-side" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-coupling-side-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/coupling_side.jpeg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-coupling-side-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;12: Coupling PCB and Support Panel – Side View, with Spacers Shown
+</figcaption>
+</figure>
+</div>
+<p>Next, attach the support board to the modified back panel using the same M3 long 16.00mm screws and nuts.</p>
+<div id="fig-support-to-back" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-support-to-back-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/support_to_back.jpeg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-support-to-back-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;13: Support Panel to Back – Exploded. <em>Note: The updated Front Panel design files are skinnier, and the corners of the support panel should not intrude on the flanges of the back panel.</em>
+</figcaption>
+</figure>
+</div>
+<div id="fig-support-assembled" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-support-assembled-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/support_assembled.jpeg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-support-assembled-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;14: Support Panel to Back – Assembled
+</figcaption>
+</figure>
+</div>
+<p>Finally, attach the back panel to the rest of the enclosure using two of the stock enclosure small screws, and two stock larger screws with nuts. Again, see the manual that came along with the stock enclosure for more on this—we followed the same process.</p>
+<div id="fig-exploded-back" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-exploded-back-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/exploded_back.jpeg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-exploded-back-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;15: Back Panel – Exploded
+</figcaption>
+</figure>
+</div>
+<div id="fig-assembled-support-interior" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-assembled-support-interior-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/support_interior.jpeg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-assembled-support-interior-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;16: Back Panel – Assembled, Interior
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="step-1.4-output-pcb-attachment" class="level3">
+<h3 class="anchored" data-anchor-id="step-1.4-output-pcb-attachment">Step 1.4: Output PCB Attachment</h3>
+<div id="fig-outputs-exploded" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-outputs-exploded-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/outputs_exploded.jpeg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-outputs-exploded-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;17: Output PCBs – Exploded
+</figcaption>
+</figure>
+</div>
+<p>Make sure you have collected the above materials – 4 output boards, 12 long 16.00mm M3 screws and matching nuts, and 16 long 5.20mm nylon spacers (MNI-4-10). Assemble onto the front panel as shown below.</p>
+<div id="fig-outputs-assembled" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-outputs-assembled-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/outputs_assembled.jpeg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-outputs-assembled-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;18: Output PCBs – Assembled
+</figcaption>
+</figure>
+</div>
+<div id="fig-output-spacers" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-output-spacers-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/output_spacers.jpeg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-output-spacers-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;19: Output PCBs – Top View, Spacers Shown
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="finished-enclosure" class="level3">
+<h3 class="anchored" data-anchor-id="finished-enclosure">Finished Enclosure</h3>
+<p>Note that after completing steps 1.1-1.4 above, the enclosure should be assembled. It is missing the top panel—leave it off while you complete the following steps. Further, make sure that you still have not assembled the two screws that go into the middle of the side panels, into the bottom panel. Here, we have replaced the stock enclosure short screws with 16.00mm long M3 screws and nuts. These will be used to help attach the input board stack-up to the enclosure securely.</p>
+<div id="fig-end-enclosure" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-end-enclosure-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/end_enclosure.jpeg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-end-enclosure-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;20: Finished Enclosure
+</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="input-board-stack-up" class="level2">
+<h2 class="anchored" data-anchor-id="input-board-stack-up">Input Board Stack-Up</h2>
+<p>Turning now to the right half of the full exploded view (<a href="#fig-exploded" class="quarto-xref">Figure&nbsp;4</a>), lets assemble the input board stack. To do so, you’ll need 4 input boards with a 2-pin jumper for each. To structurally stack them up, you’ll need 6 M3 nuts, 18 M3 PCB standoffs, and 6 M3 short 6.00mm screws.</p>
+<p>Note that we have labelled each of the boards we received with a masking tape number. This helps with tracking which boards have been tested, according to the system outlined above in Preparation – Electronics Defect Testing. It also helps to track future errors.</p>
+<div id="fig-input-exploded" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-input-exploded-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/input_exploded.jpeg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-input-exploded-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;21: Input Boards, Structural Stacking Elements, and Jumpers
+</figcaption>
+</figure>
+</div>
+<p>Additionally, we have created the following 3D printed support system, designed to center the input board stack within the enclosure, and to keep it from knocking around inside the box. Note that only the rectangular units on the upper left and right are required for this function, but we will show our construction with the full bottom support in place.</p>
+<div id="fig-printed-support-exploded" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-printed-support-exploded-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/printed_support_exploded.jpeg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-printed-support-exploded-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;22: Printed Support – Exploded
+</figcaption>
+</figure>
+</div>
+<div id="fig-printed-support-assembled" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-printed-support-assembled-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/printed_support_assembled.jpeg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-printed-support-assembled-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;23: Printed Support –&nbsp;Assembled
+</figcaption>
+</figure>
+</div>
+<p><em>Also, have your ribbon cables on hand.</em></p>
+<section id="step-2.1-bottom-layer" class="level3">
+<h3 class="anchored" data-anchor-id="step-2.1-bottom-layer">Step 2.1: Bottom layer</h3>
+<p>Assembling the bottom layer takes the most care—the upper layers are more standardized. Begin by securing 4 standoffs in the corners of one of your boards. PCB standoff through the top, nut to secure on the bottom.</p>
+<div id="fig-bottom-standoffs" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-bottom-standoffs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/bottom_standoffs.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bottom-standoffs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;24: Bottom Layer – Edge Standoffs
+</figcaption>
+</figure>
+</div>
+<p>Place this assembly on top of your 3D printed supports. Make sure that, if you have the full bottom panel, the DAC slots are aligned with the DAC pmod ports on the input board. Attach these 4 standoffs to the corners with a second set of 4 M3 nuts. There should now be 8 nuts screwed on the 4 standoffs.</p>
+<div id="fig-back-of-bottom-layer" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-back-of-bottom-layer-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/back_of_bottom_layer.jpeg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-back-of-bottom-layer-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;25: Bottom Layer – Back with only Edge Standoffs
+</figcaption>
+</figure>
+</div>
+<p>Next, attach the middle two PCB standoffs and screw these in as well, using two M3 nuts.</p>
+<div id="fig-middle-standoffs" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-middle-standoffs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/middle_standoffs.jpeg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-middle-standoffs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;26: Bottom Layer – Middle Standoffs Going In
+</figcaption>
+</figure>
+</div>
+<div id="fig-middle-standoffs-back" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-middle-standoffs-back-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/middle_standoffs_back.jpeg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-middle-standoffs-back-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;27: Bottom Layer – Secure Middle Standoffs
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="step-2.2-secure-to-enclosure" class="level3">
+<h3 class="anchored" data-anchor-id="step-2.2-secure-to-enclosure">Step 2.2: Secure To Enclosure</h3>
+<p>Place your bottom layer in the enclosure. Use the leftover screws from earlier in the enclosure process, described in the Finished Enclosure section.</p>
+<div id="fig-bottom-layer-exploded" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-bottom-layer-exploded-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/bottom_layer_exploded.jpeg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bottom-layer-exploded-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;28: Bottom Layer in Enclosure – Exploded
+</figcaption>
+</figure>
+</div>
+<div id="fig-bottom-layer-assembled" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-bottom-layer-assembled-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/bottom_layer_assembled.jpeg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bottom-layer-assembled-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;29: Bottom Layer in Enclosure – Assembled
+</figcaption>
+</figure>
+</div>
+<div id="fig-bottom-layer-assembled-closeup" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-bottom-layer-assembled-closeup-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/bottom_layer_assembled_closeup.jpeg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bottom-layer-assembled-closeup-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;30: Bottom Layer in Enclosure – Close-Up
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="step-2.3-designate-leader-or-follower" class="level3">
+<h3 class="anchored" data-anchor-id="step-2.3-designate-leader-or-follower">Step 2.3: Designate Leader or Follower</h3>
+<p>Worth calling out as it’s own step—the entire system will not work if the user does not designate each and every board as either a “leader”, connecting to the FPGA-In connector, or a “follower”, connecting to the Daisychain-In connector.</p>
+<p>By default, neither connection is enabled. The board will only receive a valid input from the mutually exclusive connectors once one of the two pins has been jumped using the 2-pin jumper.</p>
+<div id="fig-bottom-layer-jumper" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-bottom-layer-jumper-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/bottom_layer_jumper.jpeg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bottom-layer-jumper-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;31: Jumper (set to follower on the bottom layer)
+</figcaption>
+</figure>
+</div>
+<p>If a user wanted to only use up to 8 DACs, then they would connect this pin to the FPGA-In side and connect the FPGA-In connector up to the coupling board. However, we are assuming here a system of up to 32 DACs, and so we plan to build 3 more layers on top of this bottom layer. Thus, we will designate this board as a “follower”, connecting the jumper between the GND center pin and the Daisychain side.</p>
+</section>
+<section id="step-2.4-add-second-layer" class="level3">
+<h3 class="anchored" data-anchor-id="step-2.4-add-second-layer">Step 2.4: Add Second Layer</h3>
+<p>Using 6 standoffs and another board, add to the stack!</p>
+<div id="fig-second-layer" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-second-layer-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/second_layer.jpeg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-second-layer-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;32: Second Layer Added
+</figcaption>
+</figure>
+</div>
+<p>Make sure to designate this board as a follower, the same as you did to the bottom layer.</p>
+<p>In order to electrically connect the two layers, take one of your 3 Daisychain cables and attach it from the top board’s Daisychain Out to the bottom board’s Daisychain In, as shown below.</p>
+<div id="fig-first-cable" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-first-cable-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/first_cable.jpeg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-first-cable-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;33: First Daisychain Cable, assuming that the bottom layer is the terminating board (end of daisychain).
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="step-2.5-repeat-for-third-layer" class="level3">
+<h3 class="anchored" data-anchor-id="step-2.5-repeat-for-third-layer">Step 2.5: Repeat for Third Layer</h3>
+<div id="fig-third-layer" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-third-layer-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/third_layer.jpeg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-third-layer-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;34: Third Layer Added
+</figcaption>
+</figure>
+</div>
+<div id="fig-second-cable" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-second-cable-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/second_cable.jpeg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-second-cable-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;35: Second Daisychain Cable, assuming that the bottom layer is the terminating board (end of daisychain).
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="step-2.6-add-fourth-layer" class="level3">
+<h3 class="anchored" data-anchor-id="step-2.6-add-fourth-layer">Step 2.6: Add Fourth Layer</h3>
+<p>This step differs slightly. Instead of using PCB standoffs to secure the top layer, we will instead use the short 6.00mm M3 screws to tighten into the existing standoffs rising from the third layer.</p>
+<p>Also, this layer gets <strong>the designation of leader board, connecting the jumper to the FPGA-In side</strong>.</p>
+<div id="fig-fourth-layer" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-fourth-layer-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/fourth_layer.jpeg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fourth-layer-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;36: Final Fourth Layer Added
+</figcaption>
+</figure>
+</div>
+<p>Note that the jumpers should look like this, going down the line:</p>
+<div id="fig-total-jumpers" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-total-jumpers-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/total_jumpers.jpeg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-total-jumpers-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;37: All Jumper Arrangements (bottom 3 red are Daisychain “followers”, top is FPGA-In “leader”).
+</figcaption>
+</figure>
+</div>
+<p>Finally, add in the third and final daisychain connector.</p>
+<div id="fig-total-cables" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-total-cables-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/total_cables.jpeg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-total-cables-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;38: All Daisychain Cables Connected.
+</figcaption>
+</figure>
+</div>
+<div id="fig-finished-stack" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-finished-stack-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/finished_stack.jpeg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-finished-stack-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;39: Fully Assembled Input Board Stack.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="step-2.7-add-power-and-fpga-in-cable" class="level3">
+<h3 class="anchored" data-anchor-id="step-2.7-add-power-and-fpga-in-cable">Step 2.7: Add Power and FPGA-In Cable</h3>
+<p>Taking the last and special FPGA-In ribbon cable, attach it between the leader board on the stack and the coupling board.</p>
+<div id="fig-fpga-in-cable" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-fpga-in-cable-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/fpga_in_cable.jpeg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fpga-in-cable-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;40: FPGA-In Cable Added
+</figcaption>
+</figure>
+</div>
+<p>Next, connect a Molex Microfit 2-pos Power Cable between every individual input board and the coupling board. The coupling board has 4 Microfit connectors for this purpose.</p>
+<div id="fig-power-attached" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-power-attached-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/power_cable_attached.jpeg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-power-attached-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;41: Power Cable Attached. Note: Only one is shown.
+</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="adding-dacs" class="level2">
+<h2 class="anchored" data-anchor-id="adding-dacs">Adding DACs</h2>
+<p>One may attach any amount of 1-32 DACs into this system. It is recommended that you begin filling the system from the bottom, and build your way up. Each DAC must first be connected with a Adafruit 261: JST 2-Pin Cable Assembly. Connect the red leads to the middle screw terminal port, the Vout. Connect the black lead to the GND left screw terminal port. Shown below.</p>
+<div id="fig-DAC-wired" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-DAC-wired-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/DAC_wired.jpeg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-DAC-wired-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;42: Wiring of a single DAC
+</figcaption>
+</figure>
+</div>
+<p>Some users may prefer to instead twist the cables.</p>
+<div id="fig-DAC-twisted" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-DAC-twisted-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/DAC_twisted.jpeg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-DAC-twisted-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;43: Twisted Output Wire
+</figcaption>
+</figure>
+</div>
+<p>However you attach it, and whichever pmod header on the Input Board Stack you choose to plug this DAC into, just make sure that you plug the output cable into the output board SMA port which is directly across from that pmod slot. Match the 4x8 grid of pmod headers to the 4x8 grid of output board SMA ports.</p>
+<div id="fig-DAC-plugged" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-DAC-plugged-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/DAC_plugged.jpeg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-DAC-plugged-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;44: DAC Plugged In
+</figcaption>
+</figure>
+</div>
+<p>With that, you’re done! You can slap on the rack mounting flanges that came with the stock enclosure, and attach the top panel. Before you do so, best practice is to test and debug as many signals as you can. We wish you the best of luck with your QUACK box!</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/hrl-labs-clinic-24-25\.github\.io\/website\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

@@ -13,7 +13,7 @@ The QUACK box is the product of a group of students from Harvey Mudd College, wo
 
 HRL Laboratories sponsored our clinic experience, with the quantum researchers Andrew Oriani, Paul Jerger, and Abbie Wessels overseeing our project from start to finish. These three expert liaisons gave us valuable insight into their laboratory work, guided the direction of our work, offered earnest and thoughtful feedback, and generally helped us develop a successful product. The student team extends our most sincere gratitude to HRL's experts for providing us with this opportunity!
 
-Additionally, Harvey Mudd pairs the student team with an advisor from the college. Professor Joshua Brake served as our team's advisor, acting as a wealth of knowledge on electrical engineering and team dynamics. His guidance and probing technical questions were essential to the successful execution of our project, and we thank him greatly for his help! 
+Additionally, Harvey Mudd pairs the student team with an advisor from the college. Professor Joshua Brake served as our team's advisor, supporting us with his wealth of knowledge in electrical engineering and team dynamics. His guidance and probing technical questions were essential to the successful execution of our project, and we thank him greatly for his help! 
 
 Finally, our team would like to thank the others who helped us along the way. Thank you to Sho Uemura, who's expert guidance through the QICK firmware and Vivado software helped our team over several hurdles. Thank you also to the staff and faculty in Harvey Mudd's engineering department, who helped keep our clinic experience afloat with equipment and administrative services.
 
@@ -22,6 +22,7 @@ We hope you enjoy the QUACK box, and its many quirks. It is a first-ever prototy
 ## The Student Team
 
 ```{=html}
+
 <style>
 .team-container {
   display: flex;
@@ -33,7 +34,7 @@ We hope you enjoy the QUACK box, and its many quirks. It is a first-ever prototy
 .team-member {
   display: flex;
   flex-direction: column;
-  align-items: center;  /* ensures everything inside team-member is horizontally centered */
+  align-items: center;
   text-align: center;
   max-width: 300px;
 }
@@ -51,18 +52,17 @@ We hope you enjoy the QUACK box, and its many quirks. It is a first-ever prototy
 }
 
 .bio {
-  width: 100%;  /* explicitly occupy full width to prevent alignment issues */
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center; /* explicitly aligns h3 and other content */
+  align-items: center;
 }
 
 .bio h3 {
   text-align: center;
   margin: 10px 0;
-  width: 100%; /* ensures no unintended constraints affect alignment */
+  width: 100%;
 }
-
 
 .social-links a {
   margin: 5px;
@@ -74,16 +74,33 @@ We hope you enjoy the QUACK box, and its many quirks. It is a first-ever prototy
 .social-links a:hover {
   text-decoration: underline;
 }
+
 </style>
+
 <div class="team-container">
 
-  <!-- TEAM_MEMBER_FIRST_LAST, Member NUMBER -->
+  <!-- Ellie Sundheim, Member 1 -->
   <div class="team-member">
     <div class="headshot">
-      <img src="images/DEFAULT_PROFILE_PICTURE.png" alt="TEAM_MEMBER_NAME Profile Picture">
+      <img src="images/ellie.JPG" alt="Ellie Sundheim Profile Picture">
     </div>
     <div class="bio">
-      <h3>TEAM_MEMBER_FIRST_LAST</h3>
+      <h3>Ellie Sundheim</h3>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/ellie-sundheim/">LinkedIn</a>
+        <a href="https://github.com/ellieSundheim">GitHub</a>
+      </div>
+      <p>Ellie is much too pleased with herself for following an online tutorial to turn her Python code into a package. After graduation, she'll be working as an Electrical Engineer for Honeybee Robotics.</p>
+    </div>
+  </div>
+
+  <!-- Zoe Worrall, Member 2 -->
+  <div class="team-member">
+    <div class="headshot">
+      <img src="images/DEFAULT_PROFILE_PICTURE.png" alt="Zoe Worrall Profile Picture">
+    </div>
+    <div class="bio">
+      <h3>Zoe Worrall</h3>
       <div class="social-links">
         <a href="INSERT_URL_HERE_FOR_LINKEDIN">LinkedIn</a>
         <a href="INSERT_URL_HERE_FOR_GITHUB">GitHub</a>
@@ -92,22 +109,7 @@ We hope you enjoy the QUACK box, and its many quirks. It is a first-ever prototy
     </div>
   </div>
 
-  <!-- TEAM_MEMBER_FIRST_LAST, Member NUMBER -->
-  <div class="team-member">
-    <div class="headshot">
-      <img src="images/DEFAULT_PROFILE_PICTURE.png" alt="TEAM_MEMBER_NAME Profile Picture">
-    </div>
-    <div class="bio">
-      <h3>TEAM_MEMBER_FIRST_LAST</h3>
-      <div class="social-links">
-        <a href="INSERT_URL_HERE_FOR_LINKEDIN">LinkedIn</a>
-        <a href="INSERT_URL_HERE_FOR_GITHUB">GitHub</a>
-      </div>
-      <p>Example text for an example team member, this text serves as an example for the team member who is shown above. This team member is a great example of the kind of team member who is a member of the team.</p>
-    </div>
-  </div>
-
-  <!-- Jackson Philion, Member 1 -->
+  <!-- Jackson Philion, Member 3 -->
   <div class="team-member">
     <div class="headshot">
       <img src="images/jacksonProfile.jpeg" alt="Jackson Philion Headshot">
@@ -124,7 +126,38 @@ We hope you enjoy the QUACK box, and its many quirks. It is a first-ever prototy
   </div>
 
 
-  <!-- TEAM_MEMBER_FIRST_LAST, Member NUMBER -->
+  <!-- Cameron Hernandez, Member 4 -->
+  <div class="team-member">
+    <div class="headshot">
+      <img src="images/cam.jpg" alt="Cameron Hernandez Profile Picture">
+    </div>
+    <div class="bio">
+      <h3>Cameron Hernandez</h3>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/cameron-hernandez-91b431212/">LinkedIn</a>
+      </div>
+      <p>Cameron loved working with the Software team, primarily on implementing firmware logic that would handle different PVP sweeps. He's a part of the class of 2026 with a planned degree in General Engineering, specifically focusing towards electrical.</p>
+    </div>
+  </div>
+
+
+  <!-- Isabella Hottenrott, Member 5 -->
+  <div class="team-member">
+    <div class="headshot">
+      <img src="images/bella.jpeg" alt="Isabella Hottenrott Profile Picture">
+    </div>
+    <div class="bio">
+      <h3>Isabella Hottenrott</h3>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/isabella-hottenrott-ba6200259">LinkedIn</a>
+        <a href="https://github.com/Isabella-Hottenrott">GitHub</a>
+      </div>
+      <p>Bella contributed to the software side of this project and has since pursued additional opportunities working with HDL. She is heading into her final year at Harvey Mudd College, where she plans to specialize in electrical engineering and embedded systems engineering.</p>
+    </div>
+  </div>
+
+
+  <!-- TEAM_MEMBER_FIRST_LAST, Member 6 -->
   <div class="team-member">
     <div class="headshot">
       <img src="images/DEFAULT_PROFILE_PICTURE.png" alt="TEAM_MEMBER_NAME Profile Picture">
@@ -140,7 +173,7 @@ We hope you enjoy the QUACK box, and its many quirks. It is a first-ever prototy
   </div>
 
 
-  <!-- TEAM_MEMBER_FIRST_LAST, Member NUMBER -->
+  <!-- TEAM_MEMBER_FIRST_LAST, Member 7 -->
   <div class="team-member">
     <div class="headshot">
       <img src="images/DEFAULT_PROFILE_PICTURE.png" alt="TEAM_MEMBER_NAME Profile Picture">
@@ -156,39 +189,7 @@ We hope you enjoy the QUACK box, and its many quirks. It is a first-ever prototy
   </div>
 
 
-  <!-- TEAM_MEMBER_FIRST_LAST, Member NUMBER -->
-  <div class="team-member">
-    <div class="headshot">
-      <img src="images/DEFAULT_PROFILE_PICTURE.png" alt="TEAM_MEMBER_NAME Profile Picture">
-    </div>
-    <div class="bio">
-      <h3>TEAM_MEMBER_FIRST_LAST</h3>
-      <div class="social-links">
-        <a href="INSERT_URL_HERE_FOR_LINKEDIN">LinkedIn</a>
-        <a href="INSERT_URL_HERE_FOR_GITHUB">GitHub</a>
-      </div>
-      <p>Example text for an example team member, this text serves as an example for the team member who is shown above. This team member is a great example of the kind of team member who is a member of the team.</p>
-    </div>
-  </div>
-
-
-  <!-- TEAM_MEMBER_FIRST_LAST, Member NUMBER -->
-  <div class="team-member">
-    <div class="headshot">
-      <img src="images/DEFAULT_PROFILE_PICTURE.png" alt="TEAM_MEMBER_NAME Profile Picture">
-    </div>
-    <div class="bio">
-      <h3>TEAM_MEMBER_FIRST_LAST</h3>
-      <div class="social-links">
-        <a href="INSERT_URL_HERE_FOR_LINKEDIN">LinkedIn</a>
-        <a href="INSERT_URL_HERE_FOR_GITHUB">GitHub</a>
-      </div>
-      <p>Example text for an example team member, this text serves as an example for the team member who is shown above. This team member is a great example of the kind of team member who is a member of the team.</p>
-    </div>
-  </div>
-
-
-  <!-- TEAM_MEMBER_FIRST_LAST, Member NUMBER -->
+  <!-- TEAM_MEMBER_FIRST_LAST, Member 8 -->
   <div class="team-member">
     <div class="headshot">
       <img src="images/DEFAULT_PROFILE_PICTURE.png" alt="TEAM_MEMBER_NAME Profile Picture">

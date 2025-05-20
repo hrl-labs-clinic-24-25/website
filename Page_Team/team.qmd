@@ -105,7 +105,7 @@ We hope you enjoy the QUACK box, and its many quirks. It is a first-ever prototy
         <a href="INSERT_URL_HERE_FOR_LINKEDIN">LinkedIn</a>
         <a href="INSERT_URL_HERE_FOR_GITHUB">GitHub</a>
       </div>
-      <p>Example text for an example team member, this text serves as an example for the team member who is shown above. This team member is a great example of the kind of team member who is a member of the team.</p>
+      <p>Example text for Zoe Worrall, team member – this text serves as an example for the team member who is Zoe Worrall. This team member is a great example of the kind of team member who is a member of the team.</p>
     </div>
   </div>
 
@@ -160,7 +160,7 @@ We hope you enjoy the QUACK box, and its many quirks. It is a first-ever prototy
   <!-- Jessica Liu, Member 6 -->
   <div class="team-member">
     <div class="headshot">
-      <img src="images/jessica.jpg" alt="TEAM_MEMBER_NAME Profile Picture">
+      <img src="images/jessica.jpg" alt="Jessica Liu Profile Picture">
     </div>
     <div class="bio">
       <h3>Jessica Liu</h3>
@@ -173,34 +173,35 @@ We hope you enjoy the QUACK box, and its many quirks. It is a first-ever prototy
   </div>
 
 
-  <!-- TEAM_MEMBER_FIRST_LAST, Member 7 -->
+  <!-- Lucas Lemos, Member 7 -->
   <div class="team-member">
     <div class="headshot">
-      <img src="images/DEFAULT_PROFILE_PICTURE.png" alt="TEAM_MEMBER_NAME Profile Picture">
+      <img src="images/lucas.jpg" alt="Lucas Lemos Profile Picture">
     </div>
     <div class="bio">
-      <h3>TEAM_MEMBER_FIRST_LAST</h3>
+      <h3>Lucas Lemos</h3>
       <div class="social-links">
-        <a href="INSERT_URL_HERE_FOR_LINKEDIN">LinkedIn</a>
-        <a href="INSERT_URL_HERE_FOR_GITHUB">GitHub</a>
+        <a href="https://www.linkedin.com/in/lucas-a-lemos/">LinkedIn</a>
+        <a href="https://github.com/lalemos1">GitHub</a>
+        <a href="https://muse.io/lalemos1">Portfolio</a>
       </div>
-      <p>Example text for an example team member, this text serves as an example for the team member who is shown above. This team member is a great example of the kind of team member who is a member of the team.</p>
+      <p>Lucas appreciated designing and testing creative solutions to the SPI demultiplexing problem. There's few satisfactions in EE greater than holding the freshly fabbed PCB you've poured hours of labor into. Lucas is entering his senior year focusing on electronics hardware and embedded systems.</p>
     </div>
   </div>
 
 
-  <!-- TEAM_MEMBER_FIRST_LAST, Member 8 -->
+  <!-- Natalie Arce, Member 8 -->
   <div class="team-member">
     <div class="headshot">
-      <img src="images/DEFAULT_PROFILE_PICTURE.png" alt="TEAM_MEMBER_NAME Profile Picture">
+      <img src="images/DEFAULT_PROFILE_PICTURE.png" alt="Natalie Arce Profile Picture">
     </div>
     <div class="bio">
-      <h3>TEAM_MEMBER_FIRST_LAST</h3>
+      <h3>Natalie Arce</h3>
       <div class="social-links">
         <a href="INSERT_URL_HERE_FOR_LINKEDIN">LinkedIn</a>
         <a href="INSERT_URL_HERE_FOR_GITHUB">GitHub</a>
       </div>
-      <p>Example text for an example team member, this text serves as an example for the team member who is shown above. This team member is a great example of the kind of team member who is a member of the team.</p>
+      <p>Example text for Natalie Arce, team member – this text serves as an example for the team member who is Natalie Arce. This team member is a great example of the kind of team member who is a member of the team.</p>
     </div>
   </div>
 

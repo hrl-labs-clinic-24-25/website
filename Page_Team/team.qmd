@@ -121,7 +121,7 @@ We hope you enjoy the QUACK box, and its many quirks. It is a first-ever prototy
         <a href="https://github.com/jacksonphilion/">GitHub</a>
         <a href="https://jacksonphilion.github.io/hmc-e155-portfolio/">MicroPs Portfolio</a>
       </div>
-      <p>Jackson enjoyed working as the Hardware team lead for this project, particularly on the input board final design. After graduation in 2025, he'll be pursuing work as a Digital Designer on Masimo's ASIC team.</p>
+      <p>Jackson enjoyed working as the Hardware team lead for this project, particularly on the input board final design. After graduation in 2025, he's excited to pursue work in Electrical Engineering as a Digital Designer, PCB Designer, or Embedded Systems Engineer.</p>
     </div>
   </div>
 

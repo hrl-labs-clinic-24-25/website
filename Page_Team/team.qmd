@@ -193,15 +193,14 @@ We hope you enjoy the QUACK box, and its many quirks. It is a first-ever prototy
   <!-- Natalie Arce, Member 8 -->
   <div class="team-member">
     <div class="headshot">
-      <img src="images/DEFAULT_PROFILE_PICTURE.png" alt="Natalie Arce Profile Picture">
+      <img src="images/natalie.jpg" alt="Natalie Arce Profile Picture">
     </div>
     <div class="bio">
       <h3>Natalie Arce</h3>
       <div class="social-links">
-        <a href="INSERT_URL_HERE_FOR_LINKEDIN">LinkedIn</a>
-        <a href="INSERT_URL_HERE_FOR_GITHUB">GitHub</a>
+        <a href="https://www.linkedin.com/in/natalie-arce-6878b6256/">LinkedIn</a>
       </div>
-      <p>Example text for Natalie Arce, team member – this text serves as an example for the team member who is Natalie Arce. This team member is a great example of the kind of team member who is a member of the team.</p>
+      <p>Natalie worked on the hardware team where she enjoyed learning about PCB design for the output board and implemented mechanical supports for the DACs. She is entering her senior year at Harvey Mudd College where she will further explore interests in mechanical design and manufacturing processes.</p>
     </div>
   </div>
 
